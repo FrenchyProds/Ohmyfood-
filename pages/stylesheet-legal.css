@@ -1,0 +1,45 @@
+header
+    {
+        background-color: #009688;
+        text-align: center;
+        color: #FFCA28;
+    }
+
+footer
+    {
+        display: flex;
+        height: 70%;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        grid-area: footer;
+        background-color: #009688;
+        color: #FFCA28;
+        position: sticky;
+        position: -webkit-sticky;
+        bottom: 0px;
+    }
+
+h2 
+    {
+        color: #7E57C2;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.6rem;
+    }
+
+.info
+    {
+        margin: 2rem 7em 2rem 7rem;
+        text-align: justify;
+    }
+
+.charte
+    {
+        margin: 2rem 7em 2rem 7rem;
+        text-align: justify;
+    }
+
+.charte h2
+    {
+        margin-top: 5rem;
+    }

@@ -1,0 +1,129 @@
+body
+    {
+        height: 1250px;
+    }
+
+.grid
+    {
+        display: grid;
+        grid-template-columns: 2fr 3fr 4fr 1fr 4fr 3fr 2fr;
+        grid-template-rows: 9% 3.6% 39% 3.6% 39% 3.6% 5.7% 3.6% 6.8%;
+        grid-template-areas: 
+        'header header header header header header header'
+        '. . . . . . .'
+        '. enchant enchant . french french .'
+        '. . . . . . .'
+        '. papilles papilles . gout gout .'
+        '. . . . . . .'
+        '. . soon soon soon . .'
+        '. . . . . . .'
+        'footer footer footer footer footer footer footer';
+        height: 100%;
+        margin: 0rem 3rem 0rem 3rem;
+    }
+
+    @media (max-width: 600px) {
+        .grid {
+            margin: 0rem;
+            grid-template-columns: 0.5fr 3fr 4fr 1fr 4fr 3fr 0.5fr;
+        }
+    }
+
+header
+    {
+        background-color: #009688;
+        text-align: center;
+        color: #FFCA28;
+        grid-area: header;
+    }
+
+header h1
+    {
+        margin-top: 2rem;
+        font-size: 2.5rem;
+    }
+
+.enchanted
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow: 0px 0px 6px 6px #e7e2e2;
+        -webkit-box-shadow: 0px 0px 6px 6px #e7e2e2;
+        -moz-box-shadow: 0px 0px 6px 6px #e7e2e2;
+        background-color: #ffe2e2;
+        text-align: center;
+        grid-area: enchant;
+    }
+
+.french
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow: 0px 0px 6px 6px #e7e2e2;
+        -webkit-box-shadow: 0px 0px 6px 6px #e7e2e2;
+        -moz-box-shadow: 0px 0px 6px 6px #e7e2e2;  
+        background-color: rgb(241, 231, 241);
+        text-align: center;
+        grid-area: french;
+    }
+
+.papilles
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #f1eded;
+        box-shadow: 0px 0px 6px 6px #e7e2e2;
+        -webkit-box-shadow: 0px 0px 6px 6px #e7e2e2;
+        -moz-box-shadow: 0px 0px 6px 6px #e7e2e2;    
+        text-align: center;
+        grid-area: papilles;
+    }
+
+.gout
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow: 0px 0px 6px 6px #e7e2e2;
+        text-align: center;
+        grid-area: gout;
+    }
+
+.soon
+    {
+        background-color: #009688;
+        border-radius: 10%;
+        grid-area: soon;
+    }
+
+.soon h2
+    {
+        text-align: center;
+        color: #FFCA28;
+        font-size: 1.3rem;
+    }
+
+    @media (max-width: 350px) {
+        .soon h2 {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+    }
+
+footer
+    {
+        display: flex;
+        height: 70%;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        grid-area: footer;
+        background-color: #009688;
+        color: #FFCA28;
+        position: sticky;
+        position: -webkit-sticky;
+        bottom: 0px;
+    }
+
