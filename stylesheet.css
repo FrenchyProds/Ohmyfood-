@@ -3,6 +3,57 @@ body
         height: 1250px;
     }
 
+a :visited
+    {
+        color: #FFCA28;
+        text-decoration: none;
+    }
+
+footer a
+    {
+        color: #FFCA28;
+        font-size: 1.3rem;
+        text-decoration: none;
+    }
+
+.enchanted a
+    {
+        color: #FFCA28;
+        font-size: 1.3rem;
+        text-decoration: none; 
+    }
+
+.french a
+    {
+        color: #FFCA28;
+        font-size: 1.3rem;
+        text-decoration: none; 
+    }
+
+.papilles a
+    {
+        color: #FFCA28;
+        font-size: 1.3rem;
+        text-decoration: none; 
+    }
+
+.gout a
+    {
+        color: #FFCA28;
+        font-size: 1.3rem;
+        text-decoration: none; 
+    }
+
+.legal
+    {
+        margin-left: 1rem;
+    }
+
+.contact
+    {
+        margin-right: 1rem;
+    }
+
 .grid
     {
         display: grid;
@@ -94,8 +145,12 @@ header h1
 
 .soon
     {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
         background-color: #009688;
         border-radius: 10%;
+        height: 80%;
         grid-area: soon;
     }
 
@@ -116,9 +171,9 @@ header h1
 footer
     {
         display: flex;
-        height: 70%;
+        justify-content: space-between;
         flex-flow: row nowrap;
-        justify-content: space-around;
+        height: 70%;
         grid-area: footer;
         background-color: #009688;
         color: #FFCA28;

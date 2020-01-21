@@ -1,0 +1,123 @@
+.legal:hover {
+        animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+        transform: translate3d(0, 0, 0);
+        backface-visibility: hidden;
+        perspective: 1000px;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+      }
+      
+      @keyframes shake {
+        10%, 90% {
+          transform: translate3d(-1px, 0, 0);
+        }
+        
+        20%, 80% {
+          transform: translate3d(2px, 0, 0);
+        }
+      
+        30%, 50%, 70% {
+          transform: translate3d(-4px, 0, 0);
+        }
+      
+        40%, 60% {
+          transform: translate3d(4px, 0, 0);
+        }
+      }
+
+.index:hover {
+        animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+        transform: translate3d(0, 0, 0);
+        backface-visibility: hidden;
+        perspective: 1000px;
+        animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+      }
+      
+      @keyframes shake {
+        10%, 90% {
+          transform: translate3d(-1px, 0, 0);
+        }
+        
+        20%, 80% {
+          transform: translate3d(2px, 0, 0);
+        }
+      
+        30%, 50%, 70% {
+          transform: translate3d(-4px, 0, 0);
+        }
+      
+        40%, 60% {
+          transform: translate3d(4px, 0, 0);
+        }
+      }
+
+.contact:hover {
+        animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+        transform: translate3d(0, 0, 0);
+        backface-visibility: hidden;
+        perspective: 1000px;
+        animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+      }
+      
+      @keyframes shake {
+        10%, 90% {
+          transform: translate3d(-1px, 0, 0);
+        }
+        
+        20%, 80% {
+          transform: translate3d(2px, 0, 0);
+        }
+      
+        30%, 50%, 70% {
+          transform: translate3d(-4px, 0, 0);
+        }
+      
+        40%, 60% {
+          transform: translate3d(4px, 0, 0);
+        }
+      }
+
+.dots {
+        content: '.';
+        animation: dots 1.5s steps(5, end) infinite;}
+      
+      @keyframes dots {
+        0%, 20% {
+          color: rgba(0,0,0,0);
+          text-shadow:
+            .25em 0 0 rgba(0,0,0,0),
+            .5em 0 0 rgba(0,0,0,0);}
+        21% {
+            color: #FFCA28;
+            text-shadow:
+            .25em 0 0 rgba(0,0,0,0),
+            .5em 0 0 rgba(0,0,0,0);}
+        40% {
+          color: #FFCA28;
+          text-shadow:
+            .25em 0 0 rgba(0,0,0,0),
+            .5em 0 0 rgba(0,0,0,0);}
+        60% {
+          text-shadow:
+            .25em 0 0 #FFCA28,
+            .5em 0 0 rgba(0,0,0,0);}
+        80%, 100% {
+          text-shadow:
+            .25em 0 0 #FFCA28,
+            .5em 0 0 #FFCA28;}}
+
+.food:hover {
+        animation: fadeOut ease 2s alternate;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes fadeOut {
+        0% {
+          opacity:0;
+        }
+        100% {
+          opacity:1;
+        }
+      }

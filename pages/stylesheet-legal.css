@@ -3,6 +3,26 @@ header
         background-color: #009688;
         text-align: center;
         color: #FFCA28;
+        margin: 0rem 3rem;
+        padding: 0.2rem 0rem;
+    }
+
+    @media (max-width: 600px) {
+        header {
+            margin: 0rem 1rem;
+        }
+    }
+
+    @media (max-width: 450px) {
+        header {
+            margin: 0rem 0.5rem;
+        }
+    }
+
+    @media (max-width: 330px) {
+        header {
+            margin: 0rem 0rem;
+        }
     }
 
 footer
@@ -10,13 +30,67 @@ footer
         display: flex;
         height: 70%;
         flex-flow: row nowrap;
-        justify-content: space-around;
+        justify-content: space-between;
         grid-area: footer;
         background-color: #009688;
         color: #FFCA28;
         position: sticky;
         position: -webkit-sticky;
         bottom: 0px;
+        margin: 0rem 3rem 0rem 3rem;
+    }
+
+    @media (max-width: 600px) {
+        footer {
+            margin: 0rem 1rem;
+        }
+    }
+
+    @media (max-width: 450px) {
+        footer {
+            margin: 0rem 0.5rem;
+        }
+    }
+
+    @media (max-width: 330px) {
+        footer {
+            margin: 0rem 0rem;
+        }
+    }
+
+.index
+    {
+        margin-left: 1rem;
+    }
+
+.contact
+    {
+        margin-right: 1rem;
+    }
+
+a :visited
+    {
+        color: #FFCA28;
+        text-decoration: none;
+    }
+
+footer a
+    {
+        color: #FFCA28;
+        font-size: 1.3rem;
+        text-decoration: none;
+    }
+
+    @media (max-width: 330px) {
+        footer a {
+            font-size: 1rem;
+        }
+    }
+
+    @media (max-width: 270px) {
+        footer a {
+            font-size: 0.85rem;
+        }
     }
 
 h2 
@@ -59,7 +133,7 @@ h2
 
 .charte
     {
-        margin: 2rem 12em 2rem 12rem;
+        margin: 2rem 12rem 2rem 12rem;
         text-align: justify;
     }
 
@@ -89,13 +163,13 @@ h2
 
 .charte h2
     {
-        margin-top: 5rem;
+        margin-top: 3rem;
     }
 
 .ok p
     {
         margin: 2rem 12em 2rem 12rem;
-        text-align: justify;
+        text-align: center;
         font-size: 1.3rem;
         font-weight: bold;
     }
