@@ -102,17 +102,3 @@
           text-shadow:
             .25em 0 0 #FFCA28,
             .5em 0 0 #FFCA28;}}
-
-.food:hover {
-        animation: fadeOut ease 2s alternate;
-        animation-iteration-count: infinite;
-      }
-
-      @keyframes fadeOut {
-        0% {
-          opacity:0;
-        }
-        100% {
-          opacity:1;
-        }
-      }
