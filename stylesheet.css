@@ -1,6 +1,45 @@
+/* ======================================== MEDIA QUERIES ======================================== */
+
+
+/* ======================================== Ecrans de moins de 800px ======================================== */
+
+
+
+
+/* ======================================== Ecrans de moins de 600px ======================================== */
+
+
+@media (max-width: 600px) {
+    .grid {
+        margin: 0rem;
+        grid-template-columns: 0.5fr 3fr 4fr 1fr 4fr 3fr 0.5fr !important;
+    }
+}
+
+
+/* ======================================== Ecrans de moins de 450px ======================================== */
+
+
+
+
+
+/* ======================================== Ecrans de moins de 350px ======================================== */
+
+
+@media (max-width: 350px) {
+    .soon h2 {
+        margin-bottom: 1rem !important;
+        font-size: 1rem !important;
+    }
+}
+
+
+/* ======================================== Ecrans de moins de 300px ======================================== */
+
+
 body
     {
-        height: 1250px;
+        height: 1100px;
     }
 
 a :visited
@@ -71,13 +110,6 @@ footer a
         'footer footer footer footer footer footer footer';
         height: 100%;
         margin: 0rem 3rem 0rem 3rem;
-    }
-
-    @media (max-width: 600px) {
-        .grid {
-            margin: 0rem;
-            grid-template-columns: 0.5fr 3fr 4fr 1fr 4fr 3fr 0.5fr;
-        }
     }
 
 header
@@ -161,24 +193,18 @@ header h1
         font-size: 1.3rem;
     }
 
-    @media (max-width: 350px) {
-        .soon h2 {
-            margin-bottom: 1rem;
-            font-size: 1rem;
-        }
-    }
-
 footer
     {
         display: flex;
         justify-content: space-between;
         flex-flow: row nowrap;
-        height: 70%;
+        height: 60%;
         grid-area: footer;
         background-color: #009688;
         color: #FFCA28;
         position: sticky;
         position: -webkit-sticky;
+        top: -10px;
         bottom: 0px;
     }
 
