@@ -1,0 +1,238 @@
+@import "../1_Variables/_variables.scss";
+@import '../2_Mixins/_mixins.scss';
+
+/* ======================================== MEDIA QUERIES ======================================== */
+
+@media (max-width: 700px) {
+    footer, header {
+        width: 90% !important;
+        margin: auto !important;
+    }
+}
+
+
+
+@media (max-width: 440px) {
+    .legal, .contact {
+        line-height: 0.5rem;
+        margin: auto !important;
+        padding: 0.5rem 0rem !important;
+        text-align: center;
+    }
+}
+
+
+
+
+@media (max-width: 500px) {
+    .grid {
+        margin: 0rem 0.5rem !important;
+        grid-template-columns: 3fr 4fr 0.2fr 0.2fr 4fr 3fr !important;
+        grid-template-areas:
+        '. . . . . .'
+        ' enchant enchant . . french french '
+        '. . . . . '
+        ' papilles papilles . . gout gout '
+        '. . . . . . '
+        'soon soon soon soon soon soon '
+        '. . . . . . '
+        !important;
+    }
+}
+
+
+/* ======================================== Ecrans de moins de 600px ======================================== */
+
+
+@media (max-width: 600px) {
+    .grid {
+        margin: 0rem;
+        grid-template-columns: 0.5fr 3fr 4fr 1fr 4fr 3fr 0.5fr !important;
+    }
+}
+
+/* ======================================== Ecrans de moins de 300px ======================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Alex+Brush|Croissant+One|Devonshire|Montserrat&display=swap');
+
+
+@font-face {
+    font-family: 'flow_extbold';
+    src: url('../fonts/Flow-FontZillion/flow_b-webfont.woff') format('woff'),
+         url('../fonts/Flow-FontZillion/flow_b.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+    {
+        height: 950px;
+        width: 90vw;
+        margin: auto;
+    }
+
+a :visited
+    {
+        color: #FFCA28;
+        text-decoration: none;
+    }
+
+a
+    {
+        @include links;
+    }
+
+
+
+.grid
+    {
+        display: grid;
+        grid-template-columns: 2fr 3fr 4fr 1fr 4fr 3fr 2fr;
+        grid-template-rows: 3.6% 39% 3.6% 39% 3.6% 5.7% 5.5%;
+        grid-template-areas: 
+        '. . . . . . .'
+        '. enchant enchant . french french .'
+        '. . . . . . .'
+        '. papilles papilles . gout gout .'
+        '. . . . . . .'
+        '. . soon soon soon . .'
+        '. . . . . . .';
+        height: 100%;
+        margin: 0rem 3rem 0rem 3rem;
+    }
+
+.enchanted
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @include box-shadow();
+        background-color: #ffe2e2;
+        text-align: center;
+        grid-area: enchant;
+        p {
+            font-family: 'Devonshire', normal;
+            @include mainpage--name;
+        }
+        h3 {
+            font-family: 'flow_extbold', cursive;
+            @include mainpage--name;
+            font-size: 2rem !important;
+        }
+    }
+
+.french
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @include box-shadow();  
+        background-color: rgb(241, 231, 241);
+        text-align: center;
+        grid-area: french;
+        p {
+        font-family: 'Croissant One', cursive;
+        font-size: 1.3rem;
+        padding: 0.5rem;
+        margin: 0rem;
+        background: -webkit-linear-gradient(360deg, rgb(204, 100, 16), rgb(164, 91, 233));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        h3 {
+            @include mainpage--menu;
+            color: rgb(204, 100, 16);
+        }
+    }
+
+.fa-music:before {
+    background: -webkit-linear-gradient(360deg, rgb(226, 74, 86), rgb(235, 148, 77));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+}
+
+.papilles
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #f1eded;
+        @include box-shadow();    
+        text-align: center;
+        grid-area: papilles;
+        p {
+            font-family: 'Alex Brush', cursive;
+            @include mainpage--name;
+            background: -webkit-linear-gradient(360deg, rgb(14, 14, 172), rgb(103, 174, 241));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        h3 {
+            @include mainpage--menu;
+            color: rgb(68, 120, 207);
+        }
+    }
+
+.gout
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow: 0px 0px 6px 6px #e7e2e2;
+        text-align: center;
+        grid-area: gout;
+        p {
+            @include mainpage--name;
+            background: -webkit-linear-gradient(360deg, rgb(6, 143, 6), lime);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        h3 {
+            @include mainpage--menu;
+            color: rgb(5, 201, 5);
+        }
+    }
+
+.soon
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #499c76;
+        border-radius: 10px;
+        height: 80%;
+        grid-area: soon;
+        width: 70%;
+        margin: auto;
+    }
+
+.soon h2
+    {
+        display: inline-block;
+        text-align: center;
+        color: #FFCA28;
+        font-size: 2.5vw;
+        margin: auto;
+        transform: scale(1.1);
+    }
+
+footer
+    {
+        flex-flow: row wrap !important;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        line-height: 0rem;
+    a {
+        text-align: center !important;
+        margin: auto !important;
+    }
+    }
+
+.legal
+    {
+        padding-right: 0.5rem;
+    }
+
+.contact
+    {
+        padding-left: 0.5rem;
+    }

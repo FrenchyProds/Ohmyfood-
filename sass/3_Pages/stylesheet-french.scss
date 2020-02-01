@@ -1,0 +1,299 @@
+@import "../1_Variables/_variables.scss";
+@import '../2_Mixins/_mixins.scss';
+@import '../3_Pages/paintstrokes--french.scss';
+
+/* ======================================== MEDIA QUERIES ======================================== */
+
+
+/* ======================================== Ecrans de moins de 920px ======================================== */
+
+
+@media (max-width: 920px) {
+    .menu {
+        width: 80% !important;
+    }
+}
+
+/* ======================================== Ecrans de moins de 800px ======================================== */
+
+@media (max-width: 800px) {
+    .menu {
+        width: 90% !important;
+        font-size: 0.9rem !important;
+    }
+}
+
+
+/* ======================================== Ecrans de moins de 750px ======================================== */
+
+
+
+@media (max-width: 750px) {
+    .menu {
+        grid-auto-flow: column !important;
+        padding: 0rem 0.4rem !important;
+        grid-template-columns: 0.5fr 5fr 4fr 4fr 1.5fr 0.5fr !important; 
+        grid-template-areas:
+        '. . . . . .'
+        'h3 h3 h3 h3 h3 h3'
+        '. . . . . .'
+        'pr-title pr-title pr-title pr-title pr-title pr-title'
+        '. prelude prelude prelude prix-prelude .'
+        '. . . . . .'
+        'main-title main-title main-title main-title main-title main-title'
+        '. main main main main-prix .'
+        '. . . . . .'
+        'des-title des-title des-title des-title des-title des-title'
+        '. des des des des-prix .'
+        '. . . . . .'
+        'end-title end-title end-title end-title end-title end-title'
+        '. . . . . .' !important;
+    }
+    
+    .end-title {
+        display: none;
+    }
+}
+
+
+/* ======================================== Ecrans de moins de 580px ======================================== */
+
+
+@media (max-width: 580px) {
+    .menu {
+        width: 95% !important;
+    }
+}
+
+/* ======================================== Ecrans de moins de 475px ======================================== */
+
+
+@media (max-width: 485px) {
+    .menu {
+        width: 98% !important;
+        grid-template-columns: 0.2fr 5fr 4fr 4fr 1.5fr 0.2fr !important;
+        grid-template-areas:
+        '. . . . . .'
+        'h3 h3 h3 h3 h3 h3'
+        '. . . . . .'
+        'pr-title pr-title pr-title pr-title pr-title pr-title'
+        '. prelude prelude prelude prix-prelude .'
+        '. . . . . .'
+        'main-title main-title main-title main-title main-title main-title'
+        '. main main main main-prix .'
+        '. . . . . .'
+        'des-title des-title des-title des-title des-title des-title'
+        '. des des des des-prix .'
+        '. . . . . .'
+        'end-title end-title end-title end-title end-title end-title'
+        '. . . . . .' !important;
+    }
+}
+
+
+
+/* ======================================== Ecrans de moins de 450px ======================================== */
+
+
+@media (max-width: 450px) {
+    body {
+        margin: 0rem !important;
+    }
+}
+
+
+/* ======================================== Alignement prix / plats ======================================== */
+
+
+@media (max-width: 468px) {
+    .des-prix {
+        line-height: 1.7rem;
+    }
+    .final {
+        line-height: 1rem;
+    }
+}
+
+@media (max-width: 366px) {
+    .prix-prelude {
+        line-height: 1.7rem;
+    }
+    .prelude {
+        line-height: 1.1rem;
+    }
+}
+
+@media (max-width: 347px) {
+    .orgue {
+        line-height: 1.15rem;
+    }
+    .main-prix {
+        line-height: 1.7rem;
+    }
+}
+   
+
+/* ======================================== FIN DES MEDIA QUERIES ======================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Devonshire&display=swap');
+
+@font-face {
+font-family: 'typo_comics';
+src: url('../fonts/Typo_Comics/typo_comics_light_demo.otf') format('otf');
+font-weight: normal;
+font-style: normal;
+}
+
+%mainfont {
+    font-family: 'typo_comics', cursive;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 0rem;
+}
+
+    .menu
+        {
+            display: grid;
+            margin: auto;
+            width: 70%;
+            margin-bottom: 3rem;
+            grid-template-columns: 1fr 3.5fr 4fr 3fr 1fr 1fr;
+            grid-template-rows: auto;
+            row-gap: 5px;
+            grid-template-areas:
+            '. . . . . .'
+            '. h3 h3 h3 h3 .'
+            '. . . . . .'
+            'pr-title pr-title pr-title pr-title pr-title pr-title '
+            '. prelude prelude prelude prix-prelude .'
+            '. . . . . .'
+            'main-title main-title main-title main-title main-title main-title'
+            '. main main main main-prix .'
+            '. . . . . .'
+            'des-title des-title des-title des-title des-title des-title'
+            '. des des des des-prix .'
+            '. . . . . .'
+            '. end-title end-title end-title end-title .'
+            '. . . . . .';
+        }       
+
+
+.legal
+    {
+        margin-left: 1rem;
+    }
+
+
+.contact
+    {
+        margin-right: 1rem;
+    }
+
+a :visited
+    {
+        color: $color-main;
+        text-decoration: none;
+    }
+
+h2 
+    {
+        color: #7E57C2;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.6rem;
+        grid-area: h2;
+    }
+
+.trait1
+    {
+        display: none;
+        grid-area: trait1;
+        transform: scale(0.1);
+    }
+
+article
+    {
+        background-color: #ffe2e2;
+    }
+
+.title
+    {
+        grid-area: h3;
+        text-align: center;
+        font-family: 'Devonshire', cursive;
+    }
+
+article h4
+    {
+        text-align: center;
+        font-weight: bold;
+        @extend %mainfont;
+    }
+
+.pr-title
+    {
+        text-align: center;
+        @extend %mainfont;
+    }
+
+.prelude
+    {
+        grid-area: prelude;
+        @extend %mainfont;
+    }    
+
+.prix-prelude
+    {
+        grid-area: prix-prelude;
+        font-weight: bold;
+        text-align: end;
+        @extend %mainfont;
+    }
+
+.main-title
+    {
+        @extend %mainfont;
+    }
+
+.orgue
+    {
+        grid-area: main;
+        @extend %mainfont;
+    }
+
+.main-prix
+    {
+        grid-area: main-prix;
+        font-weight: bold;
+        text-align: end;
+        @extend %mainfont;
+    }
+
+.des-title
+    {
+        @extend %mainfont;
+    }
+
+.final
+    {
+        grid-area: des;
+        @extend %mainfont;
+    }
+
+.des-prix
+    {
+        grid-area: des-prix;
+        font-weight: bold;
+        text-align: end;
+        @extend %mainfont;
+    }
+
+.end-title
+    {
+        grid-area: end-title;
+        text-align: center;
+        font-family: 'Devonshire', cursive;
+    }

@@ -2,8 +2,13 @@
 
 
 /* ======================================== Ecrans de moins de 800px ======================================== */
-
 @media (max-width: 800px) {
+    .ok p {
+         margin: 2rem 9rem 2rem 9rem !important;
+     }
+ }
+
+ @media (max-width: 800px) {
     .info {
         margin: 2rem 9rem 2rem 9rem !important;
     }
@@ -15,26 +20,8 @@
     }
 }
 
-@media (max-width: 800px) {
-    .ok p {
-         margin: 2rem 9rem 2rem 9rem !important;
-     }
- }
-
 
 /* ======================================== Ecrans de moins de 600px ======================================== */
-
-@media (max-width: 600px) {
-    header {
-        margin: 0rem 1rem !important;
-    }
-}
-
-@media (max-width: 600px) {
-    footer {
-        margin: 0rem 1rem !important;
-    }
-}
 
 @media (max-width: 600px) {
     .info {
@@ -56,19 +43,6 @@
 
 /* ======================================== Ecrans de moins de 450px ======================================== */
 
-
-@media (max-width: 450px) {
-    header {
-        margin: 0rem 0.5rem !important;
-    }
-}
-
-@media (max-width: 450px) {
-    footer {
-        margin: 0rem 0.5rem !important;
-    }
-}
-
 @media (max-width: 450px) {
     .info {
         margin: 2rem 2rem 2rem 2rem !important;
@@ -86,25 +60,7 @@
         margin: 2rem 2rem 2rem 2rem !important;
     }
 }
-/* ======================================== Ecrans de moins de 330px ======================================== */
 
-@media (max-width: 330px) {
-    header {
-        margin: 0rem 0rem !important;
-    }
-}
-
-@media (max-width: 330px) {
-    footer {
-        margin: 0rem 0rem !important;
-    }
-}
-
-@media (max-width: 330px) {
-    footer a {
-        font-size: 1rem !important;
-    }
-}
 
 /* ======================================== Ecrans de moins de 300px ======================================== */
 
@@ -127,42 +83,6 @@
     }
 }
 
-
-/* ======================================== Ecrans de moins de 270px ======================================== */
-
-@media (max-width: 270px) {
-    footer a {
-        font-size: 0.85rem !important;
-    }
-}
-
-
-
-
-header
-    {
-        background-color: #009688;
-        text-align: center;
-        color: #FFCA28;
-        margin: 0rem 3rem;
-        padding: 0.2rem 0rem;
-    }
-
-footer
-    {
-        display: flex;
-        height: 70%;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        grid-area: footer;
-        background-color: #009688;
-        color: #FFCA28;
-        position: sticky;
-        position: -webkit-sticky;
-        bottom: 0px;
-        margin: 0rem 3rem 0rem 3rem;
-    }
-
 .index
     {
         margin-left: 1rem;
@@ -171,19 +91,6 @@ footer
 .contact
     {
         margin-right: 1rem;
-    }
-
-a :visited
-    {
-        color: #FFCA28;
-        text-decoration: none;
-    }
-
-footer a
-    {
-        color: #FFCA28;
-        font-size: 1.3rem;
-        text-decoration: none;
     }
 
 h2 

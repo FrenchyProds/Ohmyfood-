@@ -1,0 +1,102 @@
+/* ======================================== MEDIA QUERIES ======================================== */
+/* ======================================== Ecrans de moins de 600px ======================================== */
+@media (max-width: 600px) {
+  header {
+    margin: 0rem 1rem !important;
+  }
+}
+@media (max-width: 600px) {
+  footer {
+    margin: 0rem 1rem !important;
+  }
+}
+/* ======================================== Ecrans de moins de 500px ======================================== */
+@media (max-width: 510px) {
+  footer {
+    flex-flow: row wrap !important;
+    word-break: break-word;
+    line-height: 0.2rem !important;
+    padding-bottom: 0.3rem;
+  }
+
+  .home-button {
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
+  }
+
+  .triple {
+    margin: auto;
+  }
+}
+/* ======================================== Ecrans de moins de 450px ======================================== */
+@media (max-width: 450px) {
+  header {
+    margin: 0rem 0.5rem !important;
+  }
+}
+/* ======================================== Ecrans de moins de 330px ======================================== */
+@media (max-width: 330px) {
+  header {
+    margin: 0rem 0rem !important;
+  }
+}
+@media (max-width: 350px) {
+  footer {
+    margin: 0rem 0rem !important;
+  }
+}
+@media (max-width: 350px) {
+  footer a {
+    font-size: 1rem !important;
+  }
+}
+/* ======================================== Ecrans de moins de 270px ======================================== */
+@media (max-width: 270px) {
+  footer a {
+    font-size: 0.9rem !important;
+  }
+}
+@font-face {
+  font-family: "trueno";
+  src: url("../fonts/Trueno-FontZillion/Fonts/truenosbd.otf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+header {
+  background-color: #499c76;
+  text-align: center;
+  color: #FFCA28;
+  margin: 0rem 3rem;
+  padding: 0.2rem 0rem;
+  grid-area: header;
+  font-family: "trueno", cursive;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+}
+
+footer {
+  display: flex;
+  max-height: 8%;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  grid-area: footer;
+  background-color: #499c76;
+  color: #FFCA28;
+  position: sticky;
+  position: -webkit-sticky;
+  bottom: 0px;
+  margin: 0rem 3rem 0rem 3rem;
+  font-family: "Montserrat";
+}
+
+footer a {
+  color: #FFCA28;
+  font-size: 1.3rem;
+  text-decoration: none;
+  position: relative;
+}
+
+a :visited {
+  color: #FFCA28;
+  text-decoration: none;
+}

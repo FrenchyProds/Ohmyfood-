@@ -1,0 +1,10 @@
+@media (max-width: 920px) {
+  img {
+    width: 35vw;
+  }
+}
+img {
+  margin: auto;
+  width: 30vw;
+  height: 2vw;
+}
