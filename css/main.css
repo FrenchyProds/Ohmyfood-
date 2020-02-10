@@ -6,30 +6,24 @@
     margin: auto !important;
   }
 }
-@media (max-width: 440px) {
-  .legal, .contact {
-    line-height: 0.5rem;
-    margin: auto !important;
-    padding: 0.5rem 0rem !important;
-    text-align: center;
-  }
-}
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .grid {
     margin: 0rem 0.5rem !important;
-    grid-template-rows: auto !important;
-    grid-template-columns: 0.5fr 3fr 4fr 1fr 4fr 3fr 0.5fr !important;
-    grid-template-areas: ". . . . . . ." ". enchant enchant enchant enchant enchant ." ". . . . . . ." ". french french french french french ." ". . . . . . ." ". papilles papilles papilles papilles papilles ." ". . . . . . ." ". gout gout gout gout gout ." ". . . . . . ." ". soon soon soon soon soon ." ". . . . . . ." !important;
+    grid-template-columns: 3fr 4fr 0.2fr 0.2fr 4fr 3fr !important;
+    grid-template-areas: ". . . . . ." " enchant enchant . . french french " ". . . . . " " papilles papilles . . gout gout " ". . . . . . " "soon soon soon soon soon soon " ". . . . . . " !important;
   }
-
-  .soon h2 {
-    font-size: 4vw !important;
+}
+/* ======================================== Ecrans de moins de 600px ======================================== */
+@media (max-width: 600px) {
+  .grid {
+    margin: 0rem;
+    grid-template-columns: 0.5fr 3fr 4fr 1fr 4fr 3fr 0.5fr !important;
   }
 }
 /* ======================================== Ecrans de moins de 300px ======================================== */
 @font-face {
   font-family: "flow_extbold";
-  src: url("../fonts/Flow-FontZillion/flow_b-webfont.woff") format("woff"), url("../fonts/Flow-FontZillion/flow_b.otf") format("otf");
+  src: url("../fonts/Flow-FontZillion/flow_b-webfont.woff") format("woff"), url("../fonts/Flow-FontZillion/flow_b.otf") format("otf"), url("../fonts/Flow-FontZillion/flow_b.ttf") format("TrueType");
   font-weight: normal;
   font-style: normal;
 }
@@ -79,7 +73,7 @@ a {
   margin: 0rem;
 }
 .enchanted h3 {
-  font-family: "flow_extbold", cursive;
+  font-family: "Acme", sans-serif;
   font-size: 1.6rem;
   padding: 0rem;
   margin: 0rem;
@@ -96,7 +90,7 @@ a {
   box-shadow: 0px 0px 6px 6px #e7e2e2;
   -webkit-box-shadow: 0px 0px 6px 6px #e7e2e2;
   -moz-box-shadow: 0px 0px 6px 6px #e7e2e2;
-  background-color: #f1e7f1;
+  background-color: #faf0fa;
   text-align: center;
   grid-area: french;
 }
@@ -187,37 +181,37 @@ a {
   justify-content: center;
   background-color: #499c76;
   border-radius: 10px;
-  height: 80%;
+  height: 8vh;
   grid-area: soon;
-  width: 70%;
+  width: 25vw;
   margin: auto;
 }
 
-@media (max-width: 600px){
+@media (max-width: 500px){
   .enchanted {
     -ms-grid-row: 2;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
   }
   .french {
-    -ms-grid-row: 4;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 5;
+    -ms-grid-row: 2;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2;
   }
   .papilles {
-    -ms-grid-row: 6;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 5;
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
   }
   .gout {
-    -ms-grid-row: 8;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 5;
+    -ms-grid-row: 4;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2;
   }
   .soon {
-    -ms-grid-row: 10;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 5;
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
   }
 }
 
@@ -238,12 +232,4 @@ footer {
 footer a {
   text-align: center !important;
   margin: auto !important;
-}
-
-.legal {
-  padding-right: 0.5rem;
-}
-
-.contact {
-  padding-left: 0.5rem;
 }

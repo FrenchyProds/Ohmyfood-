@@ -1,123 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Devonshire&display=swap");
-@media (max-width: 920px) {
-  .brush-title img {
-    width: 31.5vw !important;
-  }
-
-  .brush-title--2 img {
-    width: 32vw !important;
-  }
-
-  .brush-title--3 img {
-    width: 31vw !important;
-  }
-
-  img {
-    top: 0.6vh !important;
-  }
-}
-@media (max-width: 800px) {
-  .brush-title img {
-    width: 34vw !important;
-  }
-
-  .brush-title--2 img {
-    width: 35vw !important;
-  }
-
-  .brush-title--3 img {
-    width: 33vw !important;
-  }
-
-  img {
-    top: 0.2vh !important;
-  }
-}
-@media (max-width: 750px) {
-  .brush-title img {
-    width: 35.5vw !important;
-  }
-
-  .brush-title--2 img {
-    width: 36.5vw !important;
-  }
-
-  .brush-title--3 img {
-    width: 35vw !important;
-  }
-}
-@media (max-width: 640px) {
-  .brush-title img {
-    width: 34.5vw !important;
-  }
-
-  .brush-title--2 img {
-    width: 35vw !important;
-  }
-
-  .brush-title--3 img {
-    width: 34vw !important;
-  }
-
-  img {
-    top: 0vh !important;
-  }
-}
-@media (max-width: 380px) {
-  .brush-title img {
-    width: 30vw !important;
-  }
-
-  .brush-title--2 img {
-    width: 32vw !important;
-  }
-
-  .brush-title--3 img {
-    width: 29vw !important;
-  }
-}
-img {
-  position: relative;
-  top: 1vh;
-  margin: auto;
-  height: 1.5vw;
-}
-
-.brush-title {
-  -ms-grid-row: 7;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  grid-area: pr-title;
-  text-align: center;
-}
-.brush-title img {
-  width: 27.5vw;
-}
-
-.brush-title--2 {
-  -ms-grid-row: 13;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  grid-area: main-title;
-  text-align: center;
-}
-.brush-title--2 img {
-  width: 28vw;
-}
-
-.brush-title--3 {
-  -ms-grid-row: 19;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  grid-area: des-title;
-  text-align: center;
-}
-.brush-title--3 img {
-  width: 27vw;
-}
-
 /* ======================================== MEDIA QUERIES ======================================== */
 /* ======================================== Ecrans de moins de 920px ======================================== */
+@import url("https://fonts.googleapis.com/css?family=Courgette|Croissant+One&display=swap");
 @media (max-width: 920px) {
   .menu {
     width: 80% !important;
@@ -136,26 +19,7 @@ img {
     grid-auto-flow: column !important;
     padding: 0rem 0.4rem !important;
     grid-template-columns: 0.5fr 5fr 4fr 4fr 1.5fr 0.5fr !important;
-    grid-template-areas: ". . . . . ." "h3 h3 h3 h3 h3 h3" ". . . . . ." "pr-title pr-title pr-title pr-title pr-title pr-title" ". prelude prelude prelude prix-prelude ." ". . . . . ." "main-title main-title main-title main-title main-title main-title" ". main main main main-prix ." ". . . . . ." "des-title des-title des-title des-title des-title des-title" ". des des des des-prix ." ". . . . . ." "end-title end-title end-title end-title end-title end-title" ". . . . . ." !important;
-  }
-
-  .end-title {
-    display: none;
-  }
-  .brush-title {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-  }
-  .brush-title--2 {
-    -ms-grid-row: 7;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-  }
-  .brush-title--3 {
-    -ms-grid-row: 10;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
+    grid-template-areas: ". . . . . ." "h3 h3 h3 h3 h3 h3" ". . . . . ." "pr-title pr-title pr-title pr-title pr-title pr-title" ". prelude prelude prelude prelude ." ". . . . . ." "main-title main-title main-title main-title main-title main-title" ". main main main main ." ". . . . . ." "des-title des-title des-title des-title des-title des-title" ". des des des des ." ". . . . . ." "end-title end-title end-title end-title end-title end-title" ". . . . . ." !important;
   }
 }
 /* ======================================== Ecrans de moins de 580px ======================================== */
@@ -163,28 +27,21 @@ img {
   .menu {
     width: 95% !important;
   }
+
+  .menu--info_price {
+    flex-flow: column wrap !important;
+    flex: 1 1 0;
+  }
+  .menu--info_price p {
+    text-align: center !important;
+  }
 }
 /* ======================================== Ecrans de moins de 475px ======================================== */
 @media (max-width: 485px) {
   .menu {
     width: 98% !important;
     grid-template-columns: 0.2fr 5fr 4fr 4fr 1.5fr 0.2fr !important;
-    grid-template-areas: ". . . . . ." "h3 h3 h3 h3 h3 h3" ". . . . . ." "pr-title pr-title pr-title pr-title pr-title pr-title" ". prelude prelude prelude prix-prelude ." ". . . . . ." "main-title main-title main-title main-title main-title main-title" ". main main main main-prix ." ". . . . . ." "des-title des-title des-title des-title des-title des-title" ". des des des des-prix ." ". . . . . ." "end-title end-title end-title end-title end-title end-title" ". . . . . ." !important;
-  }
-  .brush-title {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-  }
-  .brush-title--2 {
-    -ms-grid-row: 7;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-  }
-  .brush-title--3 {
-    -ms-grid-row: 10;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
+    grid-template-areas: ". . . . . ." "h3 h3 h3 h3 h3 h3" ". . . . . ." "pr-title pr-title pr-title pr-title pr-title pr-title" ". prelude prelude prelude prelude ." ". . . . . ." "main-title main-title main-title main-title main-title main-title" ". main main main main ." ". . . . . ." "des-title des-title des-title des-title des-title des-title" ". des des des des ." ". . . . . ." "end-title end-title end-title end-title end-title end-title" ". . . . . ." !important;
   }
 }
 /* ======================================== Ecrans de moins de 450px ======================================== */
@@ -193,60 +50,29 @@ img {
     margin: 0rem !important;
   }
 }
-/* ======================================== Alignement prix / plats ======================================== */
-@media (max-width: 468px) {
-  .des-prix {
-    line-height: 1.7rem;
-  }
-
-  .final {
-    line-height: 1rem;
-  }
-}
-@media (max-width: 366px) {
-  .prix-prelude {
-    line-height: 1.7rem;
-  }
-
-  .prelude {
-    line-height: 1.1rem;
-  }
-}
-@media (max-width: 347px) {
-  .orgue {
-    line-height: 1.15rem;
-  }
-
-  .main-prix {
-    line-height: 1.7rem;
-  }
-}
 /* ======================================== FIN DES MEDIA QUERIES ======================================== */
-@font-face {
-  font-family: "typo_comics";
-  src: url("../fonts/Typo_Comics/typo_comics_light_demo.otf") format("otf");
-  font-weight: normal;
-  font-style: normal;
-}
-.des-prix, .final, .des-title, .main-prix, .orgue, .main-title, .prix-prelude, .prelude, .pr-title, article h4 {
-  font-family: "typo_comics", cursive;
+.final, .des-title, .orgue, .main-title, .prelude, .pr-title, article h4 {
+  font-family: "Courgette", lighter;
 }
 
 h3 {
   font-weight: normal;
-  font-size: 2rem;
-  line-height: 0rem;
+  font-size: 1.4rem;
+  background: -webkit-linear-gradient(360deg, #cc6410, #a45be9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .menu {
   display: grid;
   margin: auto;
+  color: #cc6410;
   width: 70%;
   margin-bottom: 3rem;
   grid-template-columns: 1fr 3.5fr 4fr 3fr 1fr 1fr;
   grid-template-rows: auto;
   row-gap: 5px;
-  grid-template-areas: ". . . . . ." ". h3 h3 h3 h3 ." ". . . . . ." "pr-title pr-title pr-title pr-title pr-title pr-title " ". prelude prelude prelude prix-prelude ." ". . . . . ." "main-title main-title main-title main-title main-title main-title" ". main main main main-prix ." ". . . . . ." "des-title des-title des-title des-title des-title des-title" ". des des des des-prix ." ". . . . . ." ". end-title end-title end-title end-title ." ". . . . . .";
+  grid-template-areas: ". . . . . ." ". h3 h3 h3 h3 ." ". . . . . ." "pr-title pr-title pr-title pr-title pr-title pr-title " ". prelude prelude prelude prelude ." ". . . . . ." "main-title main-title main-title main-title main-title main-title" ". main main main main ." ". . . . . ." "des-title des-title des-title des-title des-title des-title" ". des des des des ." ". . . . . ." ". end-title end-title end-title end-title ." ". . . . . .";
 }
 
 .legal {
@@ -263,21 +89,15 @@ a :visited {
 }
 
 h2 {
-  color: #7E57C2;
   text-align: center;
   font-weight: bold;
   font-size: 1.6rem;
   grid-area: h2;
 }
 
-.trait1 {
-  display: none;
-  grid-area: trait1;
-  transform: scale(0.1);
-}
-
 article {
-  background-color: #ffe2e2;
+  background-color: #faf0fa;
+  box-shadow: 2px 2px 3px 4px #ccc;
 }
 
 .title {
@@ -286,7 +106,7 @@ article {
   -ms-grid-column-span: 4;
   grid-area: h3;
   text-align: center;
-  font-family: "Devonshire", cursive;
+  font-family: "Croissant One", cursive;
 }
 
 article h4 {
@@ -296,51 +116,49 @@ article h4 {
 
 .pr-title {
   text-align: center;
+  font-weight: bold;
+}
+
+.menu--info_price {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  flex: 1 1 0;
+  line-height: 0.8rem;
 }
 
 .prelude {
   -ms-grid-row: 9;
   -ms-grid-column: 2;
-  -ms-grid-column-span: 3;
+  -ms-grid-column-span: 4;
   grid-area: prelude;
 }
 
-.prix-prelude {
-  -ms-grid-row: 9;
-  -ms-grid-column: 5;
-  grid-area: prix-prelude;
+.prix {
   font-weight: bold;
-  text-align: end;
+  padding-left: 1rem;
+}
+
+.main-title {
+  font-weight: bold;
 }
 
 .orgue {
   -ms-grid-row: 15;
   -ms-grid-column: 2;
-  -ms-grid-column-span: 3;
+  -ms-grid-column-span: 4;
   grid-area: main;
 }
 
-.main-prix {
-  -ms-grid-row: 15;
-  -ms-grid-column: 5;
-  grid-area: main-prix;
+.des-title {
   font-weight: bold;
-  text-align: end;
 }
 
 .final {
   -ms-grid-row: 21;
   -ms-grid-column: 2;
-  -ms-grid-column-span: 3;
+  -ms-grid-column-span: 4;
   grid-area: des;
-}
-
-.des-prix {
-  -ms-grid-row: 21;
-  -ms-grid-column: 5;
-  grid-area: des-prix;
-  font-weight: bold;
-  text-align: end;
 }
 
 .end-title {
@@ -349,7 +167,77 @@ article h4 {
   -ms-grid-column-span: 4;
   grid-area: end-title;
   text-align: center;
-  font-family: "Devonshire", cursive;
+  font-family: "Croissant One", cursive;
+}
+
+/* ================================= BRUSH STROKES ================================ */
+img {
+  margin: auto;
+  height: 0.5vw;
+  border-radius: 5px;
+}
+
+.brush-title {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: pr-title;
+}
+.brush-title img {
+  width: 27vw;
+}
+
+.pr-title {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  display: flex;
+  flex-grow: 1;
+  grid-area: pr-title;
+  align-content: center;
+  font-weight: bold;
+}
+
+.brush-title--2 {
+  -ms-grid-row: 13;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: main-title;
+}
+.brush-title--2 img {
+  width: 28vw;
+}
+
+.main-title {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  display: flex;
+  flex-grow: 1;
+  grid-area: pr-title;
+  align-content: center;
+  font-weight: bold;
+}
+
+.brush-title--3 {
+  -ms-grid-row: 19;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: des-title;
+}
+.brush-title--3 img {
+  width: 30vw;
+}
+
+.des-title {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  display: flex;
+  flex-grow: 1;
+  grid-area: pr-title;
+  align-content: center;
+  font-weight: bold;
 }
 
 @media (max-width: 750px){
@@ -361,32 +249,50 @@ article h4 {
   .prelude {
     -ms-grid-row: 5;
     -ms-grid-column: 2;
-    -ms-grid-column-span: 3;
-  }
-  .prix-prelude {
-    -ms-grid-row: 5;
-    -ms-grid-column: 5;
+    -ms-grid-column-span: 4;
   }
   .orgue {
     -ms-grid-row: 8;
     -ms-grid-column: 2;
-    -ms-grid-column-span: 3;
-  }
-  .main-prix {
-    -ms-grid-row: 8;
-    -ms-grid-column: 5;
+    -ms-grid-column-span: 4;
   }
   .final {
     -ms-grid-row: 11;
     -ms-grid-column: 2;
-    -ms-grid-column-span: 3;
-  }
-  .des-prix {
-    -ms-grid-row: 11;
-    -ms-grid-column: 5;
+    -ms-grid-column-span: 4;
   }
   .end-title {
     -ms-grid-row: 13;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .brush-title {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .pr-title {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .brush-title--2 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .main-title {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .brush-title--3 {
+    -ms-grid-row: 10;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .des-title {
+    -ms-grid-row: 4;
     -ms-grid-column: 1;
     -ms-grid-column-span: 6;
   }
@@ -401,32 +307,50 @@ article h4 {
   .prelude {
     -ms-grid-row: 5;
     -ms-grid-column: 2;
-    -ms-grid-column-span: 3;
-  }
-  .prix-prelude {
-    -ms-grid-row: 5;
-    -ms-grid-column: 5;
+    -ms-grid-column-span: 4;
   }
   .orgue {
     -ms-grid-row: 8;
     -ms-grid-column: 2;
-    -ms-grid-column-span: 3;
-  }
-  .main-prix {
-    -ms-grid-row: 8;
-    -ms-grid-column: 5;
+    -ms-grid-column-span: 4;
   }
   .final {
     -ms-grid-row: 11;
     -ms-grid-column: 2;
-    -ms-grid-column-span: 3;
-  }
-  .des-prix {
-    -ms-grid-row: 11;
-    -ms-grid-column: 5;
+    -ms-grid-column-span: 4;
   }
   .end-title {
     -ms-grid-row: 13;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .brush-title {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .pr-title {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .brush-title--2 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .main-title {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .brush-title--3 {
+    -ms-grid-row: 10;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .des-title {
+    -ms-grid-row: 4;
     -ms-grid-column: 1;
     -ms-grid-column-span: 6;
   }

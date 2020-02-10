@@ -13,9 +13,6 @@
 
 
 @media (max-width: 700px) {
-    header, footer {
-        width: 95vw;
-    }
     footer a {
         display: flex;
         flex-flow: column nowrap;
@@ -29,7 +26,7 @@
 
 @media (max-width: 600px) {
     header, footer {
-        width: 98vw;
+        width: 98vw !important;
     }
     footer a {
         font-size: 1rem !important;
@@ -38,12 +35,6 @@
 
 /* ======================================== Ecrans de moins de 500px ======================================== */
 
-
-@media (max-width: 500px) {
-    footer a {
-        font-size: 0.8rem !important;
-    }
-}
 
 
 /* ======================================== Ecrans de moins de 450px ======================================== */
@@ -59,8 +50,8 @@
 
 @media (max-width: 420px) {
     footer a {
-        font-size: 1rem !important;
         margin: 0rem !important;
+        font-size: 0.9rem !important;
     }
 }
 
@@ -76,15 +67,10 @@
 @media (max-width: 350px) {
     footer {
         margin: 0rem 0rem !important;
+        justify-content: center !important;
+        line-height: 0rem !important;
     }
 }
-
-@media (max-width: 350px) {
-    footer a {
-        font-size: 1rem !important;
-    }
-}
-
 
 
 /* ======================================== Ecrans de moins de 270px ======================================== */

@@ -1,7 +1,6 @@
-@charset "UTF-8";
 /* ======================================== MEDIA QUERIES ======================================== */
 /* ======================================== Ecrans de moins de 920px ======================================== */
-@import url("https://fonts.googleapis.com/css?family=Devonshire&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Courgette|Devonshire&display=swap");
 @media (max-width: 920px) {
   .menu {
     width: 80% !important;
@@ -13,20 +12,6 @@
     width: 90% !important;
     font-size: 0.9rem !important;
   }
-
-  img {
-    top: 0.1vh !important;
-  }
-
-  .brush-title img {
-    width: 37vw !important;
-  }
-  .brush-title--2 img {
-    width: 35vw !important;
-  }
-  .brush-title--3 img {
-    width: 34vw !important;
-  }
 }
 /* ======================================== Ecrans de moins de 750px ======================================== */
 @media (max-width: 750px) {
@@ -37,49 +22,27 @@
     grid-template-columns: 0.5fr 5fr 4fr 4fr 1.5fr 0.5fr !important;
     grid-template-areas: ". . . . . ." "h3 h3 h3 h3 h3 h3" ". . . . . ." "pr-title pr-title pr-title pr-title pr-title pr-title" ". prelude prelude prelude prelude ." ". . . . . ." "main-title main-title main-title main-title main-title main-title" ". main main main main ." ". . . . . ." "des-title des-title des-title des-title des-title des-title" ". des des des des ." ". . . . . ." "end-title end-title end-title end-title end-title end-title" ". . . . . ." !important;
   }
-
-  .end-title {
-    display: none;
-  }
-
-  .prix {
-    padding-left: 0rem !important;
-  }
 }
 /* ======================================== Ecrans de moins de 580px ======================================== */
-@media (max-width: 600px) {
+@media (max-width: 580px) {
   .menu {
     width: 95% !important;
   }
 
-  .menu--organise {
-    flex-flow: column nowrap !important;
-    text-align: center !important;
-    padding: 0rem 0.5rem;
-    line-height: 1.2rem;
+  .menu--info_price {
+    flex-flow: column wrap !important;
+    flex: 1 1 0;
   }
-  .menu--organise p {
-    margin-bottom: 0rem;
-    line-height: 1.2rem;
-  }
-  .menu--organise .prix {
+  .menu--info_price p {
     text-align: center !important;
-    margin-top: 0rem;
-    margin-bottom: 0.5rem !important;
   }
 }
-/* ======================================== Ecrans de moins de 475px ======================================== */
-@media (max-width: 485px) {
+/* ======================================== Ecrans de moins de 460px ======================================== */
+@media (max-width: 460px) {
   .menu {
     width: 98% !important;
     grid-template-columns: 0.2fr 5fr 4fr 4fr 1.5fr 0.2fr !important;
-  }
-  .menu img {
-    top: -0.2vh !important;
-  }
-
-  .brush-title--3 img {
-    width: 33vw !important;
+    grid-template-areas: ". . . . . ." "h3 h3 h3 h3 h3 h3" ". . . . . ." "pr-title pr-title pr-title pr-title pr-title pr-title" ". prelude prelude prelude prelude ." ". . . . . ." "main-title main-title main-title main-title main-title main-title" ". main main main main ." ". . . . . ." "des-title des-title des-title des-title des-title des-title" ". des des des des ." ". . . . . ." "end-title end-title end-title end-title end-title end-title" ". . . . . ." !important;
   }
 }
 /* ======================================== Ecrans de moins de 450px ======================================== */
@@ -88,60 +51,10 @@
     margin: 0rem !important;
   }
 }
-/* ======================================== Organisation des traits ======================================== */
-img {
-  position: relative;
-  top: 0.5vh;
-  margin: auto;
-  height: 1.5vw;
-}
-
-.brush-title {
-  -ms-grid-row: 7;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  grid-area: pr-title;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-}
-.brush-title img {
-  width: 30.5vw;
-}
-.brush-title--2 {
-  -ms-grid-row: 13;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  grid-area: main-title;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-}
-.brush-title--2 img {
-  width: 28vw;
-}
-.brush-title--3 {
-  -ms-grid-row: 19;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  grid-area: des-title;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-}
-.brush-title--3 img {
-  width: 27vw;
-}
-
-/* =================================== CSS Général ========================================= */
-@font-face {
-  font-family: "typo_comics";
-  src: url("../fonts/Typo_Comics/typo_comics_light_demo.otf") format("otf");
-  font-weight: normal;
-  font-style: normal;
-}
-.final, .prix, .orgue, .prelude, .menu--title, article h4 {
-  font-family: "typo_comics", cursive;
+/* ======================================== FIN DES MEDIA QUERIES ======================================== */
+.des-title, .pr-title, .final, .orgue, .main-title, .prelude, article h4 {
+  font-family: "Courgette", cursive;
+  font-weight: lighter;
 }
 
 h3 {
@@ -169,7 +82,7 @@ h3 {
   margin-right: 1rem;
 }
 
-a :visited {
+a:visited {
   color: #FFCA28;
   text-decoration: none;
 }
@@ -181,14 +94,19 @@ h2 {
   grid-area: h2;
 }
 
-.trait1 {
-  display: none;
-  grid-area: trait1;
-  transform: scale(0.1);
+.fa-music:before {
+  background: -webkit-linear-gradient(360deg, #e24a56, #eb944d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#title--img {
+  padding-top: 0.5rem;
 }
 
 article {
   background-color: #ffe2e2;
+  box-shadow: 2px 2px 3px 4px #ccc;
 }
 
 .title {
@@ -202,13 +120,7 @@ article {
 
 article h4 {
   text-align: center;
-  font-weight: bold;
-}
-
-.menu--organise {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
+  font-size: 1.3rem;
 }
 
 .prelude {
@@ -216,9 +128,19 @@ article h4 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 4;
   grid-area: prelude;
+}
+
+.menu--info_price {
   display: flex;
-  flex-flow: column nowrap;
-  align-content: center;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  flex: 1 1 0;
+  line-height: 0.8rem;
+}
+
+.prix {
+  font-weight: bold;
+  padding-left: 1rem;
 }
 
 .orgue {
@@ -226,14 +148,6 @@ article h4 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 4;
   grid-area: main;
-  display: flex;
-  flex-flow: column nowrap;
-}
-
-.prix {
-  font-weight: bold;
-  text-align: end;
-  padding-left: 2rem;
 }
 
 .final {
@@ -241,8 +155,6 @@ article h4 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 4;
   grid-area: des;
-  display: flex;
-  flex-flow: column nowrap;
 }
 
 .end-title {
@@ -252,27 +164,82 @@ article h4 {
   grid-area: end-title;
   text-align: center;
   font-family: "Devonshire", cursive;
+}
+
+#end--img {
+  margin-right: 1.5rem;
+}
+
+/* ================================= BRUSH STROKES ================================ */
+img {
+  margin: auto;
+  height: 1.5vw;
+}
+
+.brush-title {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: pr-title;
+}
+.brush-title img {
+  width: 29vw;
+}
+
+.pr-title {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-grow: 1;
+  grid-area: pr-title;
+  align-content: center;
+  font-weight: bold;
+}
+
+.brush-title--2 {
+  -ms-grid-row: 13;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: main-title;
+}
+.brush-title--2 img {
+  width: 26vw;
+}
+
+.main-title {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  display: flex;
+  flex-grow: 1;
+  grid-area: pr-title;
+  align-content: center;
+  font-weight: bold;
+}
+
+.brush-title--3 {
+  -ms-grid-row: 19;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: des-title;
+}
+.brush-title--3 img {
+  width: 25vw;
+}
+
+.des-title {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  display: flex;
+  flex-grow: 1;
+  grid-area: pr-title;
+  align-content: center;
+  font-weight: bold;
 }
 
 @media (max-width: 750px){
-  .brush-title {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-  }
-  .brush-title--2 {
-    -ms-grid-row: 7;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-  }
-  .brush-title--3 {
-    -ms-grid-row: 10;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-  }
   .title {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
@@ -298,7 +265,92 @@ article h4 {
     -ms-grid-column: 1;
     -ms-grid-column-span: 6;
   }
+  .brush-title {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .pr-title {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .brush-title--2 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .main-title {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .brush-title--3 {
+    -ms-grid-row: 10;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .des-title {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
 }
-.end-title i {
-  padding: 0rem 3vw;
+
+@media (max-width: 460px){
+  .title {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .prelude {
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 4;
+  }
+  .orgue {
+    -ms-grid-row: 8;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 4;
+  }
+  .final {
+    -ms-grid-row: 11;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 4;
+  }
+  .end-title {
+    -ms-grid-row: 13;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .brush-title {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .pr-title {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .brush-title--2 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .main-title {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .brush-title--3 {
+    -ms-grid-row: 10;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .des-title {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
 }

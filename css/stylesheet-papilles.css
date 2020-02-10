@@ -1,0 +1,151 @@
+.des-prix, .final, .des-title, .main-prix, .orgue, .main-title, .prix-prelude, .prelude, .pr-title, article h4 {
+  font-family: "Courgette", cursive;
+  font-weight: none;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 0rem;
+}
+
+.menu {
+  display: grid;
+  margin: auto;
+  width: 70%;
+  margin-bottom: 3rem;
+  grid-template-columns: 1fr 3.5fr 4fr 3fr 1fr 1fr;
+  grid-template-rows: auto;
+  row-gap: 5px;
+  grid-template-areas: ". . . . . ." ". h3 h3 h3 h3 ." ". . . . . ." "pr-title pr-title pr-title pr-title pr-title pr-title " ". prelude prelude prelude prix-prelude ." ". prelude prelude prelude prix-prelude ." ". prelude prelude prelude prix-prelude ." ". prelude prelude prelude prix-prelude ." ". . . . . ." "main-title main-title main-title main-title main-title main-title" ". main main main main-prix ." ". . . . . ." "des-title des-title des-title des-title des-title des-title" ". des des des des-prix ." ". . . . . ." ". end-title end-title end-title end-title ." ". . . . . .";
+}
+
+.legal {
+  margin-left: 1rem;
+}
+
+.contact {
+  margin-right: 1rem;
+}
+
+a:visited {
+  color: #FFCA28;
+  text-decoration: none;
+}
+
+h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.6rem;
+  grid-area: h2;
+}
+
+article {
+  background-color: #ffe2e2;
+}
+
+.title {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-area: h3;
+  text-align: center;
+  font-family: "Devonshire", cursive;
+}
+
+article h4 {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.pr-title {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: pr-title;
+  display: flex;
+  flex: 1;
+  width: 70%;
+  margin: 1rem auto;
+  line-height: 1em;
+}
+
+.pr-title:before, .pr-title:after {
+  content: "";
+  flex-grow: 1;
+  margin: 0px 4px;
+  background: linear-gradient(to right, black, black);
+  background-size: 100% 5px;
+  background-position: -50% 50%;
+  background-repeat: repeat-x;
+}
+
+.prelude {
+  -ms-grid-row: 9;
+  -ms-grid-row-span: 7;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: prelude;
+}
+
+.prix-prelude {
+  -ms-grid-row: 9;
+  -ms-grid-row-span: 7;
+  -ms-grid-column: 5;
+  grid-area: prix-prelude;
+  font-weight: bold;
+  text-align: end;
+}
+
+.main-title {
+  -ms-grid-row: 19;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: main-title;
+}
+
+.orgue {
+  -ms-grid-row: 21;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: main;
+}
+
+.main-prix {
+  -ms-grid-row: 21;
+  -ms-grid-column: 5;
+  grid-area: main-prix;
+  font-weight: bold;
+  text-align: end;
+}
+
+.des-title {
+  -ms-grid-row: 25;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: des-title;
+}
+
+.final {
+  -ms-grid-row: 27;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: des;
+}
+
+.des-prix {
+  -ms-grid-row: 27;
+  -ms-grid-column: 5;
+  grid-area: des-prix;
+  font-weight: bold;
+  text-align: end;
+}
+
+.end-title {
+  -ms-grid-row: 31;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-area: end-title;
+  text-align: center;
+  font-family: "Devonshire", cursive;
+}

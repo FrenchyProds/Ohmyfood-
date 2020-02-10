@@ -11,43 +11,32 @@
 }
 
 
-
-@media (max-width: 440px) {
-    .legal, .contact {
-        line-height: 0.5rem;
-        margin: auto !important;
-        padding: 0.5rem 0rem !important;
-        text-align: center;
+@media (max-width: 500px) {
+    .grid {
+        margin: 0rem 0.5rem !important;
+        grid-template-columns: 3fr 4fr 0.2fr 0.2fr 4fr 3fr !important;
+        grid-template-areas:
+        '. . . . . .'
+        ' enchant enchant . . french french '
+        '. . . . . '
+        ' papilles papilles . . gout gout '
+        '. . . . . . '
+        'soon soon soon soon soon soon '
+        '. . . . . . '
+        !important;
     }
 }
 
 
+/* ======================================== Ecrans de moins de 600px ======================================== */
 
 
 @media (max-width: 600px) {
     .grid {
-        margin: 0rem 0.5rem !important;
-        grid-template-rows: auto !important;
+        margin: 0rem;
         grid-template-columns: 0.5fr 3fr 4fr 1fr 4fr 3fr 0.5fr !important;
-        grid-template-areas:
-        '. . . . . . .'
-        '. enchant enchant enchant enchant enchant .'
-        '. . . . . . .'
-        '. french french french french french .'
-        '. . . . . . .'
-        '. papilles papilles papilles papilles papilles .'
-        '. . . . . . .'
-        '. gout gout gout gout gout .'
-        '. . . . . . .'
-        '. soon soon soon soon soon .'
-        '. . . . . . .'
-        !important;
-    }
-    .soon h2{
-        font-size: 4vw !important;
     }
 }
-
 
 /* ======================================== Ecrans de moins de 300px ======================================== */
 
@@ -57,7 +46,8 @@
 @font-face {
     font-family: 'flow_extbold';
     src: url('../fonts/Flow-FontZillion/flow_b-webfont.woff') format('woff'),
-         url('../fonts/Flow-FontZillion/flow_b.otf') format('otf');
+         url('../fonts/Flow-FontZillion/flow_b.otf') format('otf'),
+         url('../fonts/Flow-FontZillion/flow_b.ttf') format('TrueType');
     font-weight: normal;
     font-style: normal;
 }
@@ -113,7 +103,7 @@ a
             @include mainpage--name;
         }
         h3 {
-            font-family: 'flow_extbold', cursive;
+            font-family: 'Acme', sans-serif;
             @include mainpage--name;
             font-size: 2rem !important;
         }
@@ -125,7 +115,7 @@ a
         flex-direction: column;
         justify-content: center;
         @include box-shadow();  
-        background-color: rgb(241, 231, 241);
+        background-color: rgb(250, 240, 250);
         text-align: center;
         grid-area: french;
         p {
@@ -198,9 +188,9 @@ a
         justify-content: center;
         background-color: #499c76;
         border-radius: 10px;
-        height: 80%;
+        height: 8vh;
         grid-area: soon;
-        width: 70%;
+        width: 25vw;
         margin: auto;
     }
 
@@ -225,12 +215,3 @@ footer
     }
     }
 
-.legal
-    {
-        padding-right: 0.5rem;
-    }
-
-.contact
-    {
-        padding-left: 0.5rem;
-    }

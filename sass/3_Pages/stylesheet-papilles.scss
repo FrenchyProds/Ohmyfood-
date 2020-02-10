@@ -1,0 +1,170 @@
+@import "../1_Variables/_variables.scss";
+@import '../2_Mixins/_mixins.scss';
+
+
+
+%mainfont {
+    font-family: 'Courgette', cursive;
+    font-weight: none;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 0rem;
+}
+
+    .menu
+        {
+            display: grid;
+            margin: auto;
+            width: 70%;
+            margin-bottom: 3rem;
+            grid-template-columns: 1fr 3.5fr 4fr 3fr 1fr 1fr;
+            grid-template-rows: auto;
+            row-gap: 5px;
+            grid-template-areas:
+            '. . . . . .'
+            '. h3 h3 h3 h3 .'
+            '. . . . . .'
+            'pr-title pr-title pr-title pr-title pr-title pr-title '
+            '. prelude prelude prelude prix-prelude .'
+            '. prelude prelude prelude prix-prelude .'
+            '. prelude prelude prelude prix-prelude .'
+            '. prelude prelude prelude prix-prelude .'
+            '. . . . . .'
+            'main-title main-title main-title main-title main-title main-title'
+            '. main main main main-prix .'
+            '. . . . . .'
+            'des-title des-title des-title des-title des-title des-title'
+            '. des des des des-prix .'
+            '. . . . . .'
+            '. end-title end-title end-title end-title .'
+            '. . . . . .';
+        }       
+
+
+.legal
+    {
+        margin-left: 1rem;
+    }
+
+
+.contact
+    {
+        margin-right: 1rem;
+    }
+
+a:visited
+    {
+        color: $color-main;
+        text-decoration: none;
+    }
+
+h2 
+    {
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.6rem;
+        grid-area: h2;
+    }
+
+article
+    {
+        background-color: #ffe2e2;
+    }
+
+.title
+    {
+        grid-area: h3;
+        text-align: center;
+        font-family: 'Devonshire', cursive;
+    }
+
+article h4
+    {
+        text-align: center;
+        @extend %mainfont;
+        font-size: 1.3rem;
+    }
+
+.pr-title {
+    grid-area: pr-title;
+    @extend %mainfont;
+    display: flex;
+    flex: 1;
+    width: 70%;
+    margin: 1rem auto;
+    line-height: 1em;
+    }
+
+.pr-title:before, .pr-title:after{
+  content: '';
+  flex-grow: 1;
+  margin: 0px 4px;
+  background: linear-gradient(to right, black, black);
+  background-size: 100% 5px;
+  background-position: 0% 50%;
+  background-repeat: repeat-x;
+}
+
+.prelude
+    {
+        grid-area: prelude;
+        @extend %mainfont;
+    }
+
+.prix-prelude
+    {
+        grid-area: prix-prelude;
+        font-weight: bold;
+        text-align: end;
+        @extend %mainfont;
+    }
+
+.main-title
+    {
+        grid-area: main-title;
+        @extend %mainfont;
+    }
+
+.orgue
+    {
+        grid-area: main;
+        @extend %mainfont;
+    }
+
+.main-prix
+    {
+        grid-area: main-prix;
+        font-weight: bold;
+        text-align: end;
+        @extend %mainfont;
+    }
+
+.des-title
+    {
+        grid-area: des-title;
+        @extend %mainfont;
+    }
+
+.final
+    {
+        grid-area: des;
+        @extend %mainfont;
+    }
+
+.des-prix
+    {
+        grid-area: des-prix;
+        font-weight: bold;
+        text-align: end;
+        @extend %mainfont;
+    }
+
+.end-title
+    {
+        grid-area: end-title;
+        text-align: center;
+        font-family: 'Devonshire', cursive;
+    }
