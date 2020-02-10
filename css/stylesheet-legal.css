@@ -30,7 +30,7 @@
 }
 
 @media (max-width: 600px) {
-    .charte{
+    .charte {
         margin: 2rem 5rem 2rem 5rem !important;
     }
 }
@@ -129,4 +129,5 @@ h2
 .legal-centered {
     text-align: center;
     list-style: none;
+    font-weight: bold;
 }

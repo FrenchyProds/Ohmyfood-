@@ -98,8 +98,10 @@
 .zoom-wrapper {
   display: inline-block;
   overflow: hidden;
+  transition: transform ease-in-out 0.1s;
 }
 .zoom-wrapper:hover {
+  transition-duration: 1s;
   transform: scale(1.4);
   -ms-transform: scale(1.4);
   -moz-transform: scale(1.4);
@@ -108,7 +110,34 @@
   -webkit-backdrop-filter: blur(5);
           backdrop-filter: blur(5);
 }
+.zoom-wrapper p:hover {
+  opacity: 0.5;
+}
+.zoom-wrapper h3:hover {
+  opacity: 0.5;
+}
+.zoom-wrapper i:hover {
+  opacity: 0.5;
+}
 
+@media (max-width: 900px) {
+  .zoom-wrapper:hover {
+    transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+
+  .gout .zoom-wrapper:hover {
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    overflow: hidden;
+  }
+}
 /* ================================== ANIMATION SOULIGNEMENT =================================== */
 .enchanted--underline:after {
   background: none repeat scroll 0 0 transparent;
@@ -265,6 +294,9 @@ footer a {
   font-size: 1.3rem;
   text-decoration: none;
   position: relative;
+}
+footer a:hover {
+  border-bottom: 1px solid #FDCB46;
 }
 
 a :visited {

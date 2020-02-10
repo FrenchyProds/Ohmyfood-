@@ -122,7 +122,12 @@ footer a
         font-size: 1.3rem;
         text-decoration: none;
         position: relative;
+        
+        &:hover {
+            border-bottom: 1px solid $color-main;
+        }
     }
+            
 
 a :visited
     {
