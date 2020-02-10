@@ -95,14 +95,18 @@
   }
 }
 /* ========================= ANIMATION ZOOM SUR ITEMS MENU ====================== */
-.grid {
-  height: auto;
+.zoom-wrapper {
+  display: inline-block;
   overflow: hidden;
-  transition: transform 0.5s ease;
 }
-.grid :hover {
-  transform: scale(1.5);
-  opacity: 0.8;
+.zoom-wrapper:hover {
+  transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  -o-transform: scale(1.4);
+  -webkit-backdrop-filter: blur(5);
+          backdrop-filter: blur(5);
 }
 
 /* ================================== ANIMATION SOULIGNEMENT =================================== */
@@ -261,7 +265,7 @@ a :visited {
 }
 
 article {
-  background-color: #faf0fa;
+  background-color: #EDEFEF;
   box-shadow: 2px 2px 3px 4px #ccc;
 }
 
@@ -298,7 +302,7 @@ article h4 {
 }
 
 .prix {
-  padding-left: 1rem;
+  padding-left: 2rem;
 }
 
 .orgue {

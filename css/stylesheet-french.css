@@ -95,14 +95,18 @@
   }
 }
 /* ========================= ANIMATION ZOOM SUR ITEMS MENU ====================== */
-.grid {
-  height: auto;
+.zoom-wrapper {
+  display: inline-block;
   overflow: hidden;
-  transition: transform 0.5s ease;
 }
-.grid :hover {
-  transform: scale(1.5);
-  opacity: 0.8;
+.zoom-wrapper:hover {
+  transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  -o-transform: scale(1.4);
+  -webkit-backdrop-filter: blur(5);
+          backdrop-filter: blur(5);
 }
 
 /* ================================== ANIMATION SOULIGNEMENT =================================== */
@@ -231,7 +235,7 @@
 h3 {
   font-weight: normal;
   font-size: 1.4rem;
-  background: -webkit-linear-gradient(360deg, #cc6410, #a45be9);
+  background: -webkit-linear-gradient(0deg, #cc6410 0% 30%, #a45be9, #905BFD);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -309,7 +313,7 @@ article {
 
 .prix {
   font-weight: bold;
-  padding-left: 1rem;
+  padding-left: 2rem;
 }
 
 .main-title {

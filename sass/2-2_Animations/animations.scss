@@ -104,16 +104,20 @@
 
 /* ========================= ANIMATION ZOOM SUR ITEMS MENU ====================== */
 
-.grid {
-    height: auto;
-    overflow: hidden;
-    transition: transform .5s ease;
-    :hover {
-        transform: scale(1.5);
-        opacity: .8;
-    }
-}
+.zoom-wrapper
+ {
+   display: inline-block;
+   overflow: hidden;
 
+   &:hover {
+    transform: scale(1.4);
+    -ms-transform:scale(1.4);
+    -moz-transform:scale(1.4);
+    -webkit-transform:scale(1.4);
+    -o-transform:scale(1.4);
+    backdrop-filter: blur(5);
+   }
+ }
 
 
 /* ================================== ANIMATION SOULIGNEMENT =================================== */
