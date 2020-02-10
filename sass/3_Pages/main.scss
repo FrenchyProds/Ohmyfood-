@@ -119,6 +119,7 @@ a
         background-color: #ffe2e2;
         text-align: center;
         grid-area: enchant;
+        z-index: 2;
         p {
             font-family: 'Devonshire', normal;
             @include mainpage--name;
@@ -139,6 +140,7 @@ a
         background-color: rgb(250, 240, 250);
         text-align: center;
         grid-area: french;
+        z-index: 2;
         p {
         font-family: 'Croissant One', cursive;
         font-size: 1.3rem;
@@ -169,6 +171,7 @@ a
         @include box-shadow();    
         text-align: center;
         grid-area: papilles;
+        z-index: 2;
         p {
             font-family: 'Alex Brush', cursive;
             @include mainpage--name;
@@ -190,6 +193,7 @@ a
         box-shadow: 0px 0px 6px 6px #e7e2e2;
         text-align: center;
         grid-area: gout;
+        z-index: 2;
         p {
             @include mainpage--name;
             background: -webkit-linear-gradient(360deg, rgb(6, 143, 6), lime);
@@ -213,6 +217,7 @@ a
         grid-area: soon;
         width: 25vw;
         margin: auto;
+        z-index: 1;
     }
 
 .soon h2

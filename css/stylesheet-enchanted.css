@@ -1,3 +1,4 @@
+/* ===================================== ANIMATION WIGGLE NAV =============================== */
 @import url("https://fonts.googleapis.com/css?family=Courgette|Devonshire&display=swap");
 .legal:hover {
   animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
@@ -71,6 +72,7 @@
     transform: translate3d(4px, 0, 0);
   }
 }
+/* ============================= ANIMATION TROIS POINTS =========================== */
 .dots {
   content: ".";
   animation: dots 1.2s steps(5, end) infinite;
@@ -92,6 +94,116 @@
     text-shadow: 0.25em 0 0 #FFCA28, 0.5em 0 0 #FFCA28;
   }
 }
+/* ========================= ANIMATION ZOOM SUR ITEMS MENU ====================== */
+.enchanted {
+  height: auto;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+.enchanted :hover {
+  transform: scale(1.5);
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
+}
+
+.french {
+  height: auto;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+.french :hover {
+  transform: scale(1.5);
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
+}
+
+.papilles {
+  height: auto;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+.papilles :hover {
+  transform: scale(1.5);
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
+}
+
+.gout {
+  height: auto;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+.gout :hover {
+  transform: scale(1.5);
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
+}
+
+/* ================================== ANIMATION SOULIGNEMENT =================================== */
+.enchanted--underline:after {
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  display: block;
+  height: 2.5px;
+  left: 50%;
+  background: black;
+  transition: width 0.6s ease 0s, left 0.6s ease 0s;
+  width: 0;
+}
+
+.enchanted--underline:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.french--underline:after {
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  display: block;
+  height: 2.5px;
+  left: 50%;
+  transition: width 0.6s ease 0s, left 0.6s ease 0s;
+  width: 0;
+  background: linear-gradient(90deg, blue, white, red);
+}
+
+.french--underline:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.papilles--underline:after {
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  display: block;
+  height: 2.5px;
+  left: 50%;
+  transition: width 0.6s ease 0s, left 0.6s ease 0s;
+  width: 0;
+  background: #7bd2f0;
+}
+
+.papilles--underline:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.gout--underline:after {
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  display: block;
+  height: 2.5px;
+  left: 50%;
+  transition: width 0.6s ease 0s, left 0.6s ease 0s;
+  width: 0;
+  background: #30cc52;
+}
+
+.gout--underline:hover:after {
+  width: 100%;
+  left: 0;
+}
+
 /* ======================================== MEDIA QUERIES ======================================== */
 /* ======================================== Ecrans de moins de 920px ======================================== */
 @media (max-width: 920px) {
