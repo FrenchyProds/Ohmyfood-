@@ -1,6 +1,6 @@
 @import "../1_Variables/_variables.scss";
 @import '../2_Mixins/_mixins.scss';
-@import '../2.2_Animations/animations.scss';
+@import '../2-2_Animations/animations.scss';
 
 /* ======================================== MEDIA QUERIES ======================================== */
 
@@ -128,7 +128,6 @@ h3 {
         {
             display: grid;
             margin: auto;
-            color: rgb(204, 100, 16);
             width: 70%;
             margin-bottom: 3rem;
             grid-template-columns: 1fr 3.5fr 4fr 3fr 1fr 1fr;
@@ -150,7 +149,6 @@ h3 {
             '. end-title end-title end-title end-title .'
             '. . . . . .';
         }       
-
 
 .legal
     {
@@ -179,9 +177,13 @@ h2
 
 article
     {
-        background-color: rgb(250, 240, 250);
+        background-color: #FFF5FE;
         box-shadow: 2px 2px 3px 4px #ccc;
     }
+
+.entrees {
+    color: #C67412;
+}
 
 .title
     {
@@ -192,8 +194,6 @@ article
 
 article h4
     {
-        text-align: center;
-        font-weight: bold;
         @extend %mainfont;
     }
 
@@ -202,8 +202,8 @@ article h4
         text-align: center;
         @extend %mainfont;
         font-weight: bold;
+        color: #C67412;
     }
-
 
 .menu--info_price {
     display: flex;
@@ -215,6 +215,7 @@ article h4
 
 .prelude
     {
+        color: #C67412;
         grid-area: prelude;
         @extend %mainfont;
     }    
@@ -228,31 +229,29 @@ article h4
     {
         @extend %mainfont;
         font-weight: bold;
+        color: #A56799;
     }
 
 .orgue
     {
         grid-area: main;
         @extend %mainfont;
+        color: #A56799;
     }
 
 .des-title
     {
         @extend %mainfont;
         font-weight: bold;
+        text-align: center;
+        color: #6E4CCC;
     }
 
 .final
     {
         grid-area: des;
         @extend %mainfont;
-    }
-
-.end-title
-    {
-        grid-area: end-title;
-        text-align: center;
-        font-family: 'Croissant One', cursive;
+        color: #6E4CCC;
     }
 
 /* ================================= BRUSH STROKES ================================ */
@@ -286,6 +285,7 @@ img {
 .brush-title--2
     {
         grid-area: main-title;
+        text-align: center;
         img
     {
         width: 28vw;

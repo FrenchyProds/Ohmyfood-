@@ -1,3 +1,5 @@
+@import "../1_Variables/_variables.scss";
+@import '../2_Mixins/_mixins.scss';
 
 /* ===================================== ANIMATION WIGGLE NAV =============================== */
 
@@ -102,45 +104,16 @@
 
 /* ========================= ANIMATION ZOOM SUR ITEMS MENU ====================== */
 
-.enchanted {
+.grid {
     height: auto;
     overflow: hidden;
     transition: transform .5s ease;
     :hover {
         transform: scale(1.5);
-        backdrop-filter: blur(0px);
+        opacity: .8;
     }
 }
 
-.french {
-    height: auto;
-    overflow: hidden;
-    transition: transform .5s ease;
-    :hover {
-        transform: scale(1.5);
-        backdrop-filter: blur(0px);
-    }
-}
-
-.papilles {
-    height: auto;
-    overflow: hidden;
-    transition: transform .5s ease;
-    :hover {
-        transform: scale(1.5);
-        backdrop-filter: blur(0px);
-    }
-}
-
-.gout {
-    height: auto;
-    overflow: hidden;
-    transition: transform .5s ease;
-    :hover {
-        transform: scale(1.5);
-        backdrop-filter: blur(0px);
-    }
-}
 
 
 /* ================================== ANIMATION SOULIGNEMENT =================================== */
@@ -158,7 +131,8 @@
 
   .enchanted--underline:hover:after { 
     width: 100%; 
-    left: 0; 
+    left: 0;
+    opacity: 50%;
   }
 
 

@@ -1,6 +1,6 @@
 @import "../1_Variables/_variables.scss";
 @import '../2_Mixins/_mixins.scss';
-@import '../2.2_Animations/animations.scss';
+@import '../2-2_Animations/animations.scss';
 
 /* ======================================== MEDIA QUERIES ======================================== */
 
@@ -119,7 +119,7 @@
 h3 {
     font-weight: normal;
     font-size: 1.4rem;
-    background: -webkit-linear-gradient(360deg, rgb(14, 14, 172), rgb(103, 174, 241));
+    background: -webkit-linear-gradient(360deg, #52A445, #BEFF7F);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
 }
@@ -128,7 +128,6 @@ h3 {
         {
             display: grid;
             margin: auto;
-            color: rgb(52, 170, 77);
             width: 70%;
             margin-bottom: 3rem;
             grid-template-columns: 1fr 3.5fr 4fr 3fr 1fr 1fr;
@@ -179,8 +178,8 @@ h2
 
 article
     {
-        background-color: rgb(250, 240, 250);
-        box-shadow: 2px 2px 3px 4px #ccc;
+        background-color: white;
+        box-shadow: 2px 2px 3px 4px rgb(219, 213, 213);
     }
 
 .title
@@ -246,13 +245,6 @@ article h4
     {
         grid-area: des;
         @extend %mainfont;
-    }
-
-.end-title
-    {
-        grid-area: end-title;
-        text-align: center;
-        font-family: 'Croissant One', cursive;
     }
 
 /* ================================= BRUSH STROKES ================================ */

@@ -95,48 +95,14 @@
   }
 }
 /* ========================= ANIMATION ZOOM SUR ITEMS MENU ====================== */
-.enchanted {
+.grid {
   height: auto;
   overflow: hidden;
   transition: transform 0.5s ease;
 }
-.enchanted :hover {
+.grid :hover {
   transform: scale(1.5);
-  -webkit-backdrop-filter: blur(0px);
-          backdrop-filter: blur(0px);
-}
-
-.french {
-  height: auto;
-  overflow: hidden;
-  transition: transform 0.5s ease;
-}
-.french :hover {
-  transform: scale(1.5);
-  -webkit-backdrop-filter: blur(0px);
-          backdrop-filter: blur(0px);
-}
-
-.papilles {
-  height: auto;
-  overflow: hidden;
-  transition: transform 0.5s ease;
-}
-.papilles :hover {
-  transform: scale(1.5);
-  -webkit-backdrop-filter: blur(0px);
-          backdrop-filter: blur(0px);
-}
-
-.gout {
-  height: auto;
-  overflow: hidden;
-  transition: transform 0.5s ease;
-}
-.gout :hover {
-  transform: scale(1.5);
-  -webkit-backdrop-filter: blur(0px);
-          backdrop-filter: blur(0px);
+  opacity: 0.8;
 }
 
 /* ================================== ANIMATION SOULIGNEMENT =================================== */
@@ -154,6 +120,7 @@
 .enchanted--underline:hover:after {
   width: 100%;
   left: 0;
+  opacity: 50%;
 }
 
 .french--underline:after {
@@ -272,7 +239,6 @@ h3 {
 .menu {
   display: grid;
   margin: auto;
-  color: #cc6410;
   width: 70%;
   margin-bottom: 3rem;
   grid-template-columns: 1fr 3.5fr 4fr 3fr 1fr 1fr;
@@ -290,7 +256,7 @@ h3 {
 }
 
 a :visited {
-  color: #FFCA28;
+  color: #FDCB46;
   text-decoration: none;
 }
 
@@ -302,8 +268,12 @@ h2 {
 }
 
 article {
-  background-color: #faf0fa;
+  background-color: #FFF5FE;
   box-shadow: 2px 2px 3px 4px #ccc;
+}
+
+.entrees {
+  color: #C67412;
 }
 
 .title {
@@ -315,14 +285,10 @@ article {
   font-family: "Croissant One", cursive;
 }
 
-article h4 {
-  text-align: center;
-  font-weight: bold;
-}
-
 .pr-title {
   text-align: center;
   font-weight: bold;
+  color: #C67412;
 }
 
 .menu--info_price {
@@ -337,6 +303,7 @@ article h4 {
   -ms-grid-row: 9;
   -ms-grid-column: 2;
   -ms-grid-column-span: 4;
+  color: #C67412;
   grid-area: prelude;
 }
 
@@ -347,6 +314,7 @@ article h4 {
 
 .main-title {
   font-weight: bold;
+  color: #A56799;
 }
 
 .orgue {
@@ -354,10 +322,13 @@ article h4 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 4;
   grid-area: main;
+  color: #A56799;
 }
 
 .des-title {
   font-weight: bold;
+  text-align: center;
+  color: #6E4CCC;
 }
 
 .final {
@@ -365,15 +336,7 @@ article h4 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 4;
   grid-area: des;
-}
-
-.end-title {
-  -ms-grid-row: 25;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 4;
-  grid-area: end-title;
-  text-align: center;
-  font-family: "Croissant One", cursive;
+  color: #6E4CCC;
 }
 
 /* ================================= BRUSH STROKES ================================ */
@@ -409,6 +372,7 @@ img {
   -ms-grid-column: 1;
   -ms-grid-column-span: 6;
   grid-area: main-title;
+  text-align: center;
 }
 .brush-title--2 img {
   width: 28vw;
@@ -467,11 +431,6 @@ img {
     -ms-grid-column: 2;
     -ms-grid-column-span: 4;
   }
-  .end-title {
-    -ms-grid-row: 13;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-  }
   .brush-title {
     -ms-grid-row: 4;
     -ms-grid-column: 1;
@@ -524,11 +483,6 @@ img {
     -ms-grid-row: 11;
     -ms-grid-column: 2;
     -ms-grid-column-span: 4;
-  }
-  .end-title {
-    -ms-grid-row: 13;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
   }
   .brush-title {
     -ms-grid-row: 4;

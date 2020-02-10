@@ -95,48 +95,14 @@
   }
 }
 /* ========================= ANIMATION ZOOM SUR ITEMS MENU ====================== */
-.enchanted {
+.grid {
   height: auto;
   overflow: hidden;
   transition: transform 0.5s ease;
 }
-.enchanted :hover {
+.grid :hover {
   transform: scale(1.5);
-  -webkit-backdrop-filter: blur(0px);
-          backdrop-filter: blur(0px);
-}
-
-.french {
-  height: auto;
-  overflow: hidden;
-  transition: transform 0.5s ease;
-}
-.french :hover {
-  transform: scale(1.5);
-  -webkit-backdrop-filter: blur(0px);
-          backdrop-filter: blur(0px);
-}
-
-.papilles {
-  height: auto;
-  overflow: hidden;
-  transition: transform 0.5s ease;
-}
-.papilles :hover {
-  transform: scale(1.5);
-  -webkit-backdrop-filter: blur(0px);
-          backdrop-filter: blur(0px);
-}
-
-.gout {
-  height: auto;
-  overflow: hidden;
-  transition: transform 0.5s ease;
-}
-.gout :hover {
-  transform: scale(1.5);
-  -webkit-backdrop-filter: blur(0px);
-          backdrop-filter: blur(0px);
+  opacity: 0.8;
 }
 
 /* ================================== ANIMATION SOULIGNEMENT =================================== */
@@ -154,6 +120,7 @@
 .enchanted--underline:hover:after {
   width: 100%;
   left: 0;
+  opacity: 50%;
 }
 
 .french--underline:after {
@@ -291,7 +258,7 @@ h3 {
 }
 
 a:visited {
-  color: #FFCA28;
+  color: #FDCB46;
   text-decoration: none;
 }
 
@@ -383,7 +350,7 @@ article h4 {
 /* ================================= BRUSH STROKES ================================ */
 img {
   margin: auto;
-  height: 1.5vw;
+  height: 1vw;
 }
 
 .brush-title {
