@@ -1,128 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Devonshire&display=swap");
-@media (max-width: 920px) {
-  .brush-title img {
-    width: 33vw !important;
-  }
-
-  .brush-title--2 img {
-    width: 31vw !important;
-  }
-
-  .brush-title--3 img {
-    width: 29vw !important;
-  }
-
-  img {
-    top: 0.6vh !important;
-  }
-}
-@media (max-width: 800px) {
-  .brush-title img {
-    width: 37vw !important;
-  }
-
-  .brush-title--2 img {
-    width: 34vw !important;
-  }
-
-  .brush-title--3 img {
-    width: 33vw !important;
-  }
-
-  img {
-    top: 0.2vh !important;
-  }
-}
-@media (max-width: 750px) {
-  .brush-title img {
-    width: 40vw !important;
-  }
-
-  .brush-title--2 img {
-    width: 37vw !important;
-  }
-
-  .brush-title--3 img {
-    width: 36vw !important;
-  }
-}
-@media (max-width: 640px) {
-  .brush-title img {
-    width: 40vw !important;
-  }
-
-  .brush-title--2 img {
-    width: 36vw !important;
-  }
-
-  .brush-title--3 img {
-    width: 35vw !important;
-  }
-
-  img {
-    top: 0vh !important;
-  }
-}
-@media (min-width: 580px) and (max-width: 594px) {
-  .brush-title img {
-    width: 39vw !important;
-  }
-}
-@media (max-width: 360px) {
-  .brush-title img {
-    width: 41vw !important;
-  }
-
-  .brush-title--2 img {
-    width: 35vw !important;
-  }
-
-  .brush-title--3 img {
-    width: 32vw !important;
-  }
-}
-img {
-  position: relative;
-  top: 1vh;
-  margin: auto;
-  height: 1.5vw;
-}
-
-.brush-title {
-  -ms-grid-row: 7;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  grid-area: pr-title;
-  text-align: center;
-}
-.brush-title img {
-  width: 29.5vw;
-}
-
-.brush-title--2 {
-  -ms-grid-row: 19;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  grid-area: main-title;
-  text-align: center;
-}
-.brush-title--2 img {
-  width: 28vw;
-}
-
-.brush-title--3 {
-  -ms-grid-row: 25;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  grid-area: des-title;
-  text-align: center;
-}
-.brush-title--3 img {
-  width: 27vw;
-}
-
+@charset "UTF-8";
 /* ======================================== MEDIA QUERIES ======================================== */
 /* ======================================== Ecrans de moins de 920px ======================================== */
+@import url("https://fonts.googleapis.com/css?family=Devonshire&display=swap");
 @media (max-width: 920px) {
   .menu {
     width: 80% !important;
@@ -134,6 +13,20 @@ img {
     width: 90% !important;
     font-size: 0.9rem !important;
   }
+
+  img {
+    top: 0.1vh !important;
+  }
+
+  .brush-title img {
+    width: 37vw !important;
+  }
+  .brush-title--2 img {
+    width: 35vw !important;
+  }
+  .brush-title--3 img {
+    width: 34vw !important;
+  }
 }
 /* ======================================== Ecrans de moins de 750px ======================================== */
 @media (max-width: 750px) {
@@ -142,32 +35,37 @@ img {
     font-size: 0.8rem !important;
     padding: 0rem 0.4rem !important;
     grid-template-columns: 0.5fr 5fr 4fr 4fr 1.5fr 0.5fr !important;
-    grid-template-areas: ". . . . . ." "h3 h3 h3 h3 h3 h3" ". . . . . ." "pr-title pr-title pr-title pr-title pr-title pr-title" ". prelude prelude prelude prix-prelude ." ". . . . . ." "main-title main-title main-title main-title main-title main-title" ". main main main main-prix ." ". . . . . ." "des-title des-title des-title des-title des-title des-title" ". des des des des-prix ." ". . . . . ." "end-title end-title end-title end-title end-title end-title" ". . . . . ." !important;
+    grid-template-areas: ". . . . . ." "h3 h3 h3 h3 h3 h3" ". . . . . ." "pr-title pr-title pr-title pr-title pr-title pr-title" ". prelude prelude prelude prelude ." ". . . . . ." "main-title main-title main-title main-title main-title main-title" ". main main main main ." ". . . . . ." "des-title des-title des-title des-title des-title des-title" ". des des des des ." ". . . . . ." "end-title end-title end-title end-title end-title end-title" ". . . . . ." !important;
   }
 
   .end-title {
     display: none;
   }
-  .brush-title {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-  }
-  .brush-title--2 {
-    -ms-grid-row: 7;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-  }
-  .brush-title--3 {
-    -ms-grid-row: 10;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
+
+  .prix {
+    padding-left: 0rem !important;
   }
 }
 /* ======================================== Ecrans de moins de 580px ======================================== */
-@media (max-width: 580px) {
+@media (max-width: 600px) {
   .menu {
     width: 95% !important;
+  }
+
+  .menu--organise {
+    flex-flow: column nowrap !important;
+    text-align: center !important;
+    padding: 0rem 0.5rem;
+    line-height: 1.2rem;
+  }
+  .menu--organise p {
+    margin-bottom: 0rem;
+    line-height: 1.2rem;
+  }
+  .menu--organise .prix {
+    text-align: center !important;
+    margin-top: 0rem;
+    margin-bottom: 0.5rem !important;
   }
 }
 /* ======================================== Ecrans de moins de 475px ======================================== */
@@ -175,22 +73,13 @@ img {
   .menu {
     width: 98% !important;
     grid-template-columns: 0.2fr 5fr 4fr 4fr 1.5fr 0.2fr !important;
-    grid-template-areas: ". . . . . ." "h3 h3 h3 h3 h3 h3" ". . . . . ." "pr-title pr-title pr-title pr-title pr-title pr-title" ". prelude prelude prelude prix-prelude ." ". . . . . ." "main-title main-title main-title main-title main-title main-title" ". main main main main-prix ." ". . . . . ." "des-title des-title des-title des-title des-title des-title" ". des des des des-prix ." ". . . . . ." "end-title end-title end-title end-title end-title end-title" ". . . . . ." !important;
   }
-  .brush-title {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
+  .menu img {
+    top: -0.2vh !important;
   }
-  .brush-title--2 {
-    -ms-grid-row: 7;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-  }
-  .brush-title--3 {
-    -ms-grid-row: 10;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
+
+  .brush-title--3 img {
+    width: 33vw !important;
   }
 }
 /* ======================================== Ecrans de moins de 450px ======================================== */
@@ -199,45 +88,59 @@ img {
     margin: 0rem !important;
   }
 }
-/* ======================================== Alignement prix / plats ======================================== */
-@media (min-width: 800px) and (max-width: 875px) {
-  .des-prix {
-    line-height: 2rem;
-  }
+/* ======================================== Organisation des traits ======================================== */
+img {
+  position: relative;
+  top: 0.5vh;
+  margin: auto;
+  height: 1.5vw;
 }
-@media (max-width: 551px) {
-  .des-prix {
-    line-height: 1.8rem;
-  }
+
+.brush-title {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: pr-title;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
 }
-@media (max-width: 324px) {
-  .des-prix {
-    line-height: 2.05rem;
-  }
+.brush-title img {
+  width: 30.5vw;
 }
-@media (max-width: 435px) {
-  .main-prix {
-    line-height: 1.7rem;
-  }
+.brush-title--2 {
+  -ms-grid-row: 13;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: main-title;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
 }
-@media (max-width: 416px) {
-  .prix-prelude {
-    line-height: 1.7rem;
-  }
+.brush-title--2 img {
+  width: 28vw;
 }
-@media (max-width: 392px) {
-  .prix-prelude {
-    line-height: 1.83rem;
-  }
+.brush-title--3 {
+  -ms-grid-row: 19;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: des-title;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
 }
-/* ======================================== FIN DES MEDIA QUERIES ======================================== */
+.brush-title--3 img {
+  width: 27vw;
+}
+
+/* =================================== CSS Général ========================================= */
 @font-face {
   font-family: "typo_comics";
   src: url("../fonts/Typo_Comics/typo_comics_light_demo.otf") format("otf");
   font-weight: normal;
   font-style: normal;
 }
-.des-prix, .final, .des-title, .main-prix, .orgue, .main-title, .prix-prelude, .prelude, article h4 {
+.final, .prix, .orgue, .prelude, .menu--title, article h4 {
   font-family: "typo_comics", cursive;
 }
 
@@ -255,7 +158,7 @@ h3 {
   grid-template-columns: 1fr 3.5fr 4fr 3fr 1fr 1fr;
   grid-template-rows: auto;
   row-gap: 5px;
-  grid-template-areas: ". . . . . ." ". h3 h3 h3 h3 ." ". . . . . ." "pr-title pr-title pr-title pr-title pr-title pr-title " ". prelude prelude prelude prix-prelude ." ". prelude prelude prelude prix-prelude ." ". prelude prelude prelude prix-prelude ." ". prelude prelude prelude prix-prelude ." ". . . . . ." "main-title main-title main-title main-title main-title main-title" ". main main main main-prix ." ". . . . . ." "des-title des-title des-title des-title des-title des-title" ". des des des des-prix ." ". . . . . ." ". end-title end-title end-title end-title ." ". . . . . .";
+  grid-template-areas: ". . . . . ." ". h3 h3 h3 h3 ." ". . . . . ." "pr-title pr-title pr-title pr-title pr-title pr-title " ". prelude prelude prelude prelude ." ". . . . . ." "main-title main-title main-title main-title main-title main-title" ". main main main main ." ". . . . . ." "des-title des-title des-title des-title des-title des-title" ". des des des des ." ". . . . . ." ". end-title end-title end-title end-title ." ". . . . . .";
 }
 
 .legal {
@@ -272,7 +175,6 @@ a :visited {
 }
 
 h2 {
-  color: #7E57C2;
   text-align: center;
   font-weight: bold;
   font-size: 1.6rem;
@@ -303,63 +205,74 @@ article h4 {
   font-weight: bold;
 }
 
-.prelude {
-  -ms-grid-row: 9;
-  -ms-grid-row-span: 7;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 3;
-  grid-area: prelude;
+.menu--organise {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
 }
 
-.prix-prelude {
+.prelude {
   -ms-grid-row: 9;
-  -ms-grid-row-span: 7;
-  -ms-grid-column: 5;
-  grid-area: prix-prelude;
-  font-weight: bold;
-  text-align: end;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-area: prelude;
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
 }
 
 .orgue {
-  -ms-grid-row: 21;
+  -ms-grid-row: 15;
   -ms-grid-column: 2;
-  -ms-grid-column-span: 3;
+  -ms-grid-column-span: 4;
   grid-area: main;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
-.main-prix {
-  -ms-grid-row: 21;
-  -ms-grid-column: 5;
-  grid-area: main-prix;
+.prix {
   font-weight: bold;
   text-align: end;
+  padding-left: 2rem;
 }
 
 .final {
-  -ms-grid-row: 27;
+  -ms-grid-row: 21;
   -ms-grid-column: 2;
-  -ms-grid-column-span: 3;
+  -ms-grid-column-span: 4;
   grid-area: des;
-}
-
-.des-prix {
-  -ms-grid-row: 27;
-  -ms-grid-column: 5;
-  grid-area: des-prix;
-  font-weight: bold;
-  text-align: end;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 .end-title {
-  -ms-grid-row: 31;
+  -ms-grid-row: 25;
   -ms-grid-column: 2;
   -ms-grid-column-span: 4;
   grid-area: end-title;
   text-align: center;
   font-family: "Devonshire", cursive;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 @media (max-width: 750px){
+  .brush-title {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .brush-title--2 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .brush-title--3 {
+    -ms-grid-row: 10;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
   .title {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
@@ -368,29 +281,17 @@ article h4 {
   .prelude {
     -ms-grid-row: 5;
     -ms-grid-column: 2;
-    -ms-grid-column-span: 3;
-  }
-  .prix-prelude {
-    -ms-grid-row: 5;
-    -ms-grid-column: 5;
+    -ms-grid-column-span: 4;
   }
   .orgue {
     -ms-grid-row: 8;
     -ms-grid-column: 2;
-    -ms-grid-column-span: 3;
-  }
-  .main-prix {
-    -ms-grid-row: 8;
-    -ms-grid-column: 5;
+    -ms-grid-column-span: 4;
   }
   .final {
     -ms-grid-row: 11;
     -ms-grid-column: 2;
-    -ms-grid-column-span: 3;
-  }
-  .des-prix {
-    -ms-grid-row: 11;
-    -ms-grid-column: 5;
+    -ms-grid-column-span: 4;
   }
   .end-title {
     -ms-grid-row: 13;
@@ -398,43 +299,6 @@ article h4 {
     -ms-grid-column-span: 6;
   }
 }
-
-@media (max-width: 485px){
-  .title {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-  }
-  .prelude {
-    -ms-grid-row: 5;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 3;
-  }
-  .prix-prelude {
-    -ms-grid-row: 5;
-    -ms-grid-column: 5;
-  }
-  .orgue {
-    -ms-grid-row: 8;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 3;
-  }
-  .main-prix {
-    -ms-grid-row: 8;
-    -ms-grid-column: 5;
-  }
-  .final {
-    -ms-grid-row: 11;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 3;
-  }
-  .des-prix {
-    -ms-grid-row: 11;
-    -ms-grid-column: 5;
-  }
-  .end-title {
-    -ms-grid-row: 13;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-  }
+.end-title i {
+  padding: 0rem 3vw;
 }

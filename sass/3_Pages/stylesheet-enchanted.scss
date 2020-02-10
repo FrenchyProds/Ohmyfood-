@@ -1,6 +1,5 @@
 @import "../1_Variables/_variables.scss";
 @import '../2_Mixins/_mixins.scss';
-@import '../3_Pages/paintstrokes--enchanted.scss';
 
 /* ======================================== MEDIA QUERIES ======================================== */
 
@@ -20,6 +19,24 @@
     .menu {
         width: 90% !important;
         font-size: 0.9rem !important;
+        }
+        img {
+            top: 0.1vh !important;
+        }
+    .brush-title {
+       img {
+            width: 37vw !important;
+       }
+       &--2 {
+           img {
+            width: 35vw !important;
+           }
+       }
+       &--3 {
+           img {
+            width: 34vw !important;
+           }
+       }
     }
 }
 
@@ -39,13 +56,13 @@
         'h3 h3 h3 h3 h3 h3'
         '. . . . . .'
         'pr-title pr-title pr-title pr-title pr-title pr-title'
-        '. prelude prelude prelude prix-prelude .'
+        '. prelude prelude prelude prelude .'
         '. . . . . .'
         'main-title main-title main-title main-title main-title main-title'
-        '. main main main main-prix .'
+        '. main main main main .'
         '. . . . . .'
         'des-title des-title des-title des-title des-title des-title'
-        '. des des des des-prix .'
+        '. des des des des .'
         '. . . . . .'
         'end-title end-title end-title end-title end-title end-title'
         '. . . . . .' !important;
@@ -54,15 +71,33 @@
     .end-title {
         display: none;
     }
+    .prix {
+        padding-left: 0rem !important;
+    }
 }
 
 
 /* ======================================== Ecrans de moins de 580px ======================================== */
 
 
-@media (max-width: 580px) {
+@media (max-width: 600px) {
     .menu {
         width: 95% !important;
+    }
+    .menu--organise {
+        flex-flow: column nowrap !important;
+        text-align: center !important;
+        padding: 0rem 0.5rem;
+        line-height: 1.2rem;
+        p {
+            margin-bottom: 0rem;
+            line-height: 1.2rem;
+        }
+        .prix {
+            text-align: center !important;
+            margin-top: 0rem;
+            margin-bottom: 0.5rem !important;
+        }
     }
 }
 
@@ -73,21 +108,15 @@
     .menu {
         width: 98% !important;
         grid-template-columns: 0.2fr 5fr 4fr 4fr 1.5fr 0.2fr !important;
-        grid-template-areas:
-        '. . . . . .'
-        'h3 h3 h3 h3 h3 h3'
-        '. . . . . .'
-        'pr-title pr-title pr-title pr-title pr-title pr-title'
-        '. prelude prelude prelude prix-prelude .'
-        '. . . . . .'
-        'main-title main-title main-title main-title main-title main-title'
-        '. main main main main-prix .'
-        '. . . . . .'
-        'des-title des-title des-title des-title des-title des-title'
-        '. des des des des-prix .'
-        '. . . . . .'
-        'end-title end-title end-title end-title end-title end-title'
-        '. . . . . .' !important;
+
+        img {
+            top: -0.2vh !important;
+        }
+    }
+    .brush-title--3 {
+        img {
+            width: 33vw !important;
+        }
     }
 }
 
@@ -103,49 +132,57 @@
 }
 
 
-/* ======================================== Alignement prix / plats ======================================== */
 
-@media (min-width: 800px) and (max-width: 875px) {
-    .des-prix {
-        line-height: 2rem;
+
+/* ======================================== Organisation des traits ======================================== */
+
+img {
+    position: relative;
+    top: 0.5vh;
+    margin: auto;
+    height: 1.5vw;
+}
+
+.brush-title
+    {
+        grid-area: pr-title;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        img
+    {
+        width: 30.5vw;
+    }
+    &--2
+    {
+        grid-area: main-title;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        img
+    {
+        width: 28vw;
+    }
+    }
+    &--3
+    {
+        grid-area: des-title;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        img
+    {
+        width: 27vw;
+    }
     }
 }
 
 
-@media (max-width: 551px) {
-    .des-prix {
-            line-height: 1.8rem;
-    }
-}
 
-@media (max-width: 324px) {
-    .des-prix {
-        line-height: 2.05rem;
-    }
-}
+    /* =================================== CSS Général ========================================= */
 
 
-@media (max-width: 435px) {
-    .main-prix {
-        line-height: 1.7rem;
-    }
-}
 
-
-@media (max-width: 416px) {
-    .prix-prelude {
-        line-height: 1.7rem;
-    }
-}
-
-@media (max-width: 392px) {
-    .prix-prelude {
-        line-height: 1.83rem;
-    }
-}
-
-
-/* ======================================== FIN DES MEDIA QUERIES ======================================== */
 
 @import url('https://fonts.googleapis.com/css?family=Devonshire&display=swap');
 
@@ -180,16 +217,13 @@ h3 {
             '. h3 h3 h3 h3 .'
             '. . . . . .'
             'pr-title pr-title pr-title pr-title pr-title pr-title '
-            '. prelude prelude prelude prix-prelude .'
-            '. prelude prelude prelude prix-prelude .'
-            '. prelude prelude prelude prix-prelude .'
-            '. prelude prelude prelude prix-prelude .'
+            '. prelude prelude prelude prelude .'
             '. . . . . .'
             'main-title main-title main-title main-title main-title main-title'
-            '. main main main main-prix .'
+            '. main main main main .'
             '. . . . . .'
             'des-title des-title des-title des-title des-title des-title'
-            '. des des des des-prix .'
+            '. des des des des .'
             '. . . . . .'
             '. end-title end-title end-title end-title .'
             '. . . . . .';
@@ -215,7 +249,6 @@ a :visited
 
 h2 
     {
-        color: #7E57C2;
         text-align: center;
         font-weight: bold;
         font-size: 1.6rem;
@@ -248,61 +281,59 @@ article h4
         @extend %mainfont;
     }
 
+.menu--organise {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.menu--title {
+    @extend %mainfont;
+}
+
 .prelude
     {
         grid-area: prelude;
         @extend %mainfont;
-    }
-
-.prix-prelude
-    {
-        grid-area: prix-prelude;
-        font-weight: bold;
-        text-align: end;
-        @extend %mainfont;
-    }
-
-.main-title
-    {
-        @extend %mainfont;
+        display: flex;
+        flex-flow: column nowrap;
+        align-content: center;
     }
 
 .orgue
     {
         grid-area: main;
         @extend %mainfont;
+        display: flex;
+        flex-flow: column nowrap;
     }
 
-.main-prix
+.prix
     {
-        grid-area: main-prix;
         font-weight: bold;
         text-align: end;
         @extend %mainfont;
-    }
-
-.des-title
-    {
-        @extend %mainfont;
+        padding-left: 2rem;
     }
 
 .final
     {
         grid-area: des;
         @extend %mainfont;
+        display: flex;
+        flex-flow: column nowrap;
     }
 
-.des-prix
-    {
-        grid-area: des-prix;
-        font-weight: bold;
-        text-align: end;
-        @extend %mainfont;
-    }
 
 .end-title
     {
         grid-area: end-title;
         text-align: center;
         font-family: 'Devonshire', cursive;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        i {
+            padding: 0rem 3vw;
+        }
     }

@@ -14,18 +14,16 @@
     text-align: center;
   }
 }
-@media (max-width: 500px) {
-  .grid {
-    margin: 0rem 0.5rem !important;
-    grid-template-columns: 3fr 4fr 0.2fr 0.2fr 4fr 3fr !important;
-    grid-template-areas: ". . . . . ." " enchant enchant . . french french " ". . . . . " " papilles papilles . . gout gout " ". . . . . . " "soon soon soon soon soon soon " ". . . . . . " !important;
-  }
-}
-/* ======================================== Ecrans de moins de 600px ======================================== */
 @media (max-width: 600px) {
   .grid {
-    margin: 0rem;
+    margin: 0rem 0.5rem !important;
+    grid-template-rows: auto !important;
     grid-template-columns: 0.5fr 3fr 4fr 1fr 4fr 3fr 0.5fr !important;
+    grid-template-areas: ". . . . . . ." ". enchant enchant enchant enchant enchant ." ". . . . . . ." ". french french french french french ." ". . . . . . ." ". papilles papilles papilles papilles papilles ." ". . . . . . ." ". gout gout gout gout gout ." ". . . . . . ." ". soon soon soon soon soon ." ". . . . . . ." !important;
+  }
+
+  .soon h2 {
+    font-size: 4vw !important;
   }
 }
 /* ======================================== Ecrans de moins de 300px ======================================== */
@@ -195,31 +193,31 @@ a {
   margin: auto;
 }
 
-@media (max-width: 500px){
+@media (max-width: 600px){
   .enchanted {
     -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 5;
   }
   .french {
-    -ms-grid-row: 2;
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 2;
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 5;
   }
   .papilles {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
+    -ms-grid-row: 6;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 5;
   }
   .gout {
-    -ms-grid-row: 4;
-    -ms-grid-column: 5;
-    -ms-grid-column-span: 2;
+    -ms-grid-row: 8;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 5;
   }
   .soon {
-    -ms-grid-row: 6;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
+    -ms-grid-row: 10;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 5;
   }
 }
 
