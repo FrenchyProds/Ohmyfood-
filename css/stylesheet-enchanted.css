@@ -1,6 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Courgette|Devonshire&display=swap");
+.legal:hover {
+  animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  perspective: 1000px;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+.index:hover {
+  animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  perspective: 1000px;
+  animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+.contact:hover {
+  animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  perspective: 1000px;
+  animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+.dots {
+  content: ".";
+  animation: dots 1.2s steps(5, end) infinite;
+}
+
+@keyframes dots {
+  0%, 20% {
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  40% {
+    color: #FFCA28;
+    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  60% {
+    text-shadow: 0.25em 0 0 #FFCA28, 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  80%, 100% {
+    text-shadow: 0.25em 0 0 #FFCA28, 0.5em 0 0 #FFCA28;
+  }
+}
 /* ======================================== MEDIA QUERIES ======================================== */
 /* ======================================== Ecrans de moins de 920px ======================================== */
-@import url("https://fonts.googleapis.com/css?family=Courgette|Devonshire&display=swap");
 @media (max-width: 920px) {
   .menu {
     width: 80% !important;
@@ -10,31 +103,34 @@
 @media (max-width: 800px) {
   .menu {
     width: 90% !important;
-    font-size: 0.9rem !important;
   }
 }
 /* ======================================== Ecrans de moins de 750px ======================================== */
 @media (max-width: 750px) {
   .menu {
     grid-auto-flow: column !important;
-    font-size: 0.8rem !important;
     padding: 0rem 0.4rem !important;
     grid-template-columns: 0.5fr 5fr 4fr 4fr 1.5fr 0.5fr !important;
     grid-template-areas: ". . . . . ." "h3 h3 h3 h3 h3 h3" ". . . . . ." "pr-title pr-title pr-title pr-title pr-title pr-title" ". prelude prelude prelude prelude ." ". . . . . ." "main-title main-title main-title main-title main-title main-title" ". main main main main ." ". . . . . ." "des-title des-title des-title des-title des-title des-title" ". des des des des ." ". . . . . ." "end-title end-title end-title end-title end-title end-title" ". . . . . ." !important;
   }
 }
 /* ======================================== Ecrans de moins de 580px ======================================== */
-@media (max-width: 580px) {
+@media (max-width: 600px) {
   .menu {
     width: 95% !important;
   }
 
   .menu--info_price {
     flex-flow: column wrap !important;
-    flex: 1 1 0;
+  }
+  .menu--info_price .prix {
+    margin-bottom: 2rem;
   }
   .menu--info_price p {
     text-align: center !important;
+    margin-top: 0rem;
+    padding: 0rem 1rem;
+    line-height: 1.2rem;
   }
 }
 /* ======================================== Ecrans de moins de 460px ======================================== */
@@ -133,14 +229,16 @@ article h4 {
 .menu--info_price {
   display: flex;
   justify-content: space-between;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   flex: 1 1 0;
-  line-height: 0.8rem;
+}
+.menu--info_price p {
+  line-height: 1.2rem;
 }
 
 .prix {
   font-weight: bold;
-  padding-left: 1rem;
+  padding-left: 2rem;
 }
 
 .orgue {

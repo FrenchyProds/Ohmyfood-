@@ -1,5 +1,6 @@
 @import "../1_Variables/_variables.scss";
 @import '../2_Mixins/_mixins.scss';
+@import '../2.2_Animations/animations.scss';
 
 /* ======================================== MEDIA QUERIES ======================================== */
 
@@ -18,7 +19,6 @@
 @media (max-width: 800px) {
     .menu {
         width: 90% !important;
-        font-size: 0.9rem !important;
     }
 }
 
@@ -54,16 +54,18 @@
 /* ======================================== Ecrans de moins de 580px ======================================== */
 
 
-@media (max-width: 580px) {
+@media (max-width: 600px) {
     .menu {
         width: 95% !important;
     }
     .menu--info_price {
         flex-flow: column wrap !important;
-        flex: 1 1 0;
         
         p {
             text-align: center !important;
+            margin-top: 0rem;
+            padding: 0rem 1rem;
+            line-height: 1.2rem;
         }
     }
 }
@@ -260,6 +262,7 @@ img {
     margin: auto;
     height: 0.5vw;
     border-radius: 5px;
+    box-shadow: 1px 1px 5px 2px #ccc;
 }
 
 .brush-title

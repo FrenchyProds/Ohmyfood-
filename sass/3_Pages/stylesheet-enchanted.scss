@@ -1,5 +1,6 @@
 @import "../1_Variables/_variables.scss";
 @import '../2_Mixins/_mixins.scss';
+@import '../2.2_Animations/animations.scss';
 
 /* ======================================== MEDIA QUERIES ======================================== */
 
@@ -18,7 +19,6 @@
 @media (max-width: 800px) {
     .menu {
         width: 90% !important;
-        font-size: 0.9rem !important;
     }
 }
 
@@ -30,7 +30,6 @@
 @media (max-width: 750px) {
     .menu {
         grid-auto-flow: column !important;
-        font-size: 0.8rem !important;
         padding: 0rem 0.4rem !important;
         grid-template-columns: 0.5fr 5fr 4fr 4fr 1.5fr 0.5fr !important; 
         grid-template-areas:
@@ -55,16 +54,20 @@
 /* ======================================== Ecrans de moins de 580px ======================================== */
 
 
-@media (max-width: 580px) {
+@media (max-width: 600px) {
     .menu {
         width: 95% !important;
     }
     .menu--info_price {
         flex-flow: column wrap !important;
-        flex: 1 1 0;
-        
+        .prix {
+            margin-bottom: 2rem;
+        }
         p {
             text-align: center !important;
+            margin-top: 0rem;
+            padding: 0rem 1rem;
+            line-height: 1.2rem;
         }
     }
 }
@@ -214,14 +217,16 @@ article h4
 .menu--info_price {
     display: flex;
     justify-content: space-between;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     flex: 1 1 0;
-    line-height: 0.8rem;
+    p {
+        line-height: 1.2rem;
+    }
 }
 
 .prix {
     font-weight: bold;
-    padding-left: 1rem;
+    padding-left: 2rem;
 }
 
 .main-title

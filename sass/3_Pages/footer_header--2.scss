@@ -1,5 +1,6 @@
 @import "../1_Variables/_variables.scss";
 @import '../2_Mixins/_mixins.scss';
+@import '../2.2_Animations/animations.scss';
 
 /* ======================================== MEDIA QUERIES ======================================== */
 
@@ -67,7 +68,6 @@
 @media (max-width: 350px) {
     footer {
         margin: 0rem 0rem !important;
-        justify-content: center !important;
         line-height: 0rem !important;
     }
 }
