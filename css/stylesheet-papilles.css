@@ -280,6 +280,8 @@ article {
 
 article h4 {
   text-align: center;
+  font-weight: normal;
+  font-size: 1.2rem;
 }
 
 .pr-title {

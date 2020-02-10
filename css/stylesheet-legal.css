@@ -125,3 +125,8 @@ h2
         font-size: 1.3rem;
         font-weight: bold;
     }
+
+.legal-centered {
+    text-align: center;
+    list-style: none;
+}

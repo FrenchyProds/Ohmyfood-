@@ -12,11 +12,14 @@
 
         <link href="https://fonts.googleapis.com/css?family=Acme|Alex+Brush|Croissant+One|Devonshire|Montserrat|Roboto&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="css/footer_header--2.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/footer_header--2.css"> <!-- Le code CSS du footer & header se trouve ici -->
+        <link rel="stylesheet" href="css/main.css"> <!-- Le code CSS de la page se trouve ici -->
         <script src="https://kit.fontawesome.com/c838d79e10.js" crossorigin="anonymous"></script>
 
         <title>Ohmyfood!</title>
+
+        <!-- ATTENTION - LE CSS A ETE ECRIT AVEC SASS, POUR TOUTE MODIFICATION DU CSS MERCI DE PASSER PAR LES FICHIERS .SCSS SITUES
+         DANS LE DOSSIER SASS -->
 
     </head>
 
@@ -30,39 +33,39 @@
         
         </header>
 
-        <section class="grid">
+        <section class="grid"> <!-- Grid qui organise les 4 menus + la section "prochainement" -->
 
-                    <div class="menu enchanted">
-                        <div class="zoom-wrapper">
+                    <div class="menu enchanted"> <!-- Premier menu : La note enchantée -->
+                        <div class="zoom-wrapper"> <!-- Le zoom-wrapper sert pour l'animation de zoom -->
                             <i class="fas fa-music fa-2x"></i>
                             <p>La note enchantée</p>
-                            <a href="pages/enchanted.html" title="cliquez pour voir le menu" target="_blank"><h3>MENU</h3></a>
+                            <a href="pages/enchanted.html" title="cliquez pour voir le menu"><h3>MENU</h3></a>
                         </div>
                     </div>
 
-                    <div class="menu french">
+                    <div class="menu french"> <!-- 2ème menu : Le chic à la française -->
                         <div class="zoom-wrapper">
                             <p>Le chic à la française</p>
-                            <a href="pages/french.html" target="_blank" title="cliquez pour voir le menu"><h3>MENU</h3></a>
+                            <a href="pages/french.html" title="cliquez pour voir le menu"><h3>MENU</h3></a>
                         </div>
                     </div>
 
-                    <div class="menu papilles">
+                    <div class="menu papilles"> <!-- 3ème menu : Le délice des papilles -->
                         <div class="zoom-wrapper">
                             <p>Le délice des papilles</p>
-                            <a href="pages/papilles.html" target="_blank" title="cliquez pour voir le menu"><h3>MENU</h3></a>
+                            <a href="pages/papilles.html" title="cliquez pour voir le menu"><h3>MENU</h3></a>
                         </div>
                     </div>
 
-                    <div class="menu gout">
+                    <div class="menu gout"> <!-- 4ème menu: La palette du goût -->
                         <div class="zoom-wrapper">
                             <p>La palette du goût</p>
-                            <a href="pages/gout.html" target="_blank" title="cliquez pour voir le menu"><h3>MENU</h3></a>
+                            <a href="pages/gout.html" title="cliquez pour voir le menu"><h3>MENU</h3></a>
                         </div>
                     </div>
             
-                <section class="soon">
-                        <h2>Prochainement <span class="dots">.</span></h2>
+                <section class="soon"> <!-- Partie "prochainement" -->
+                        <h2>Prochainement <span class="dots">.</span></h2>  <!-- le span "dots" sert pour l'animation 3 points -->
                 </section>
             </section>
 
