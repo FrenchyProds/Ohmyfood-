@@ -405,7 +405,7 @@ article h4 {
 img {
   margin: auto;
   height: 0.8vw;
-  border-radius: 5px;
+  border-radius: 50%;
 }
 
 .brush-title {

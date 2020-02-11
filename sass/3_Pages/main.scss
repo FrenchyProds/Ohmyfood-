@@ -61,7 +61,7 @@
 
 /* ======================================== Ecrans de moins de 300px ======================================== */
 
-@import url('https://fonts.googleapis.com/css?family=Alex+Brush|Croissant+One|Devonshire|Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alex+Brush|Croissant+One|Devonshire|Kalam|Montserrat&display=swap');
 
 
 @font-face {
@@ -123,11 +123,12 @@ a
             @include mainpage--name;
         }
         h3 {
-            font-family: 'Acme', sans-serif;
+            font-family: 'Kalam', cursive;
             @include mainpage--name;
             padding-top: 2vh;
             color: black;
             font-size: 2rem !important;
+            text-transform: uppercase;
         }
     }
 
@@ -181,6 +182,8 @@ a
             font-size: 1.8rem;
         }
         h3 {
+            font-family: 'Kalam', cursive;
+            font-weight: normal;
             @include mainpage--menu;
             color: rgb(68, 120, 207);
         }
@@ -202,6 +205,8 @@ a
             -webkit-text-fill-color: transparent;
         }
         h3 {
+            font-family: 'Kalam', cursive;
+            font-weight: normal;
             @include mainpage--menu;
             color: rgb(5, 201, 5);
         }
