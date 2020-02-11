@@ -1,5 +1,5 @@
 /* ===================================== ANIMATION WIGGLE NAV =============================== */
-@import url("https://fonts.googleapis.com/css?family=Alex Brush|Courgette|Croissant+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Alex+Brush|Courgette|Croissant+One&display=swap");
 .legal:hover {
   animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
   transform: translate3d(0, 0, 0);
