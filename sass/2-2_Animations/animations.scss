@@ -103,34 +103,36 @@
 }
 
 /* ========================= ANIMATION ZOOM SUR ITEMS MENU ====================== */
-
 .zoom-wrapper
  {
    display: inline-block;
    overflow: hidden;
-   transition: transform ease-in-out 0.1s;
+   transition: transform 0.4s ease-in-out 0s;
+ }
 
-   &:hover {
-    transition-duration: 1s;
-    transform: scale(1.4);
-    -ms-transform:scale(1.4);
-    -moz-transform:scale(1.4);
-    -webkit-transform:scale(1.4);
-    -o-transform:scale(1.4);
+
+@media (min-width: 1000px) {
+   .zoom-wrapper:hover {
+    transition-duration: 0.5s;
+    transform: scale(1.4)!important;
+    -ms-transform:scale(1.4)!important;
+    -moz-transform:scale(1.4)!important;
+    -webkit-transform:scale(1.4)!important;
+    -o-transform:scale(1.4)!important;
     backdrop-filter: blur(5);
-   }
-   & p:hover {
-     opacity: 0.5;
-   }
-   & h3:hover {
-     opacity: 0.5;
-   }
-   & i:hover {
-     opacity: 0.5;
+    p:hover {
+      opacity: 0.5;
+    }
+    h3:hover {
+      opacity: 0.5;
+    }
+    i:hover {
+      opacity: 0.5;
+    }
    }
  }
 
- @media (max-width: 900px) {
+ @media (min-width: 820px) {
    .zoom-wrapper:hover {
     transform: scale(1.2);
     -ms-transform:scale(1.2);
@@ -146,7 +148,26 @@
     -o-transform:scale(1.1);
     overflow: hidden;
    }
+   .french .zoom-wrapper:hover {
+    transform: scale(1.1);
+    -ms-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    -o-transform:scale(1.1);
+    overflow: hidden;
+   }
  }
+
+ @media (min-width: 375px) and (max-width: 600px) {
+  .zoom-wrapper:hover {
+    transform: scale(1.2);
+    -ms-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -webkit-transform:scale(1.2);
+    -o-transform:scale(1.2);
+   }
+ }
+ 
 
 
 /* ================================== ANIMATION SOULIGNEMENT =================================== */
@@ -194,7 +215,7 @@
     left: 50%;
     transition: width 0.6s ease 0s, left 0.6s ease 0s;
     width: 0;
-    background: rgb(123, 210, 240);
+    background: -webkit-linear-gradient(360deg, rgb(14, 14, 172), rgb(103, 174, 241));
 }
 
 .papilles--underline:hover:after { 
@@ -211,10 +232,26 @@
     left: 50%;
     transition: width 0.6s ease 0s, left 0.6s ease 0s;
     width: 0;
-    background: rgb(48, 204, 82);
+    background: -webkit-linear-gradient(360deg, #52A445, #BEFF7F);
 }
 
 .gout--underline:hover:after { 
     width: 100%; 
     left: 0; 
   }
+
+.legal--underline:after {
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  display: block;
+  height: 2.5px;
+  left: 50%;
+  transition: width 0.6s ease 0s, left 0.6s ease 0s;
+  width: 0;
+  background: -webkit-linear-gradient(360deg, rgb(82, 53, 163), rgb(187, 121, 218));
+}
+
+.legal--underline:hover:after { 
+  width: 100%; 
+  left: 0; 
+}

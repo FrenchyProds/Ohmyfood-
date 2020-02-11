@@ -5,6 +5,13 @@
 /* ======================================== MEDIA QUERIES ======================================== */
 
 
+@media (max-width: 1270px) {
+    h3 {
+        font-size: 4.5rem !important;
+    }
+}
+
+
 /* ======================================== Ecrans de moins de 920px ======================================== */
 
 
@@ -47,6 +54,9 @@
         '. . . . . .'
         'end-title end-title end-title end-title end-title end-title'
         '. . . . . .' !important;
+    }
+    h3 {
+        font-size: 3rem !important;
     }
 }
 
@@ -104,13 +114,16 @@
     body {
         margin: 0rem !important;
     }
+    h3 {
+        font-size: 2.5rem !important;
+    }
 }
 
    
 
 /* ======================================== FIN DES MEDIA QUERIES ======================================== */
 
-@import url('https://fonts.googleapis.com/css?family=Courgette|Croissant+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Courgette|Croissant+One|Kaushan+Script&display=swap');
 
 %mainfont {
     font-family: 'Courgette', lighter;
@@ -118,10 +131,12 @@
 
 h3 {
     font-weight: normal;
-    font-size: 1.4rem;
+    font-family: 'Kaushan Script', cursive;
     background: -webkit-linear-gradient(360deg, #52A445, #BEFF7F);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+    font-size: 6.5rem;
+    margin: 1rem 0rem;
 }
 
     .menu
@@ -186,7 +201,7 @@ article
     {
         grid-area: h3;
         text-align: center;
-        font-family: 'Croissant One', cursive;
+        margin: 2rem 0rem;
     }
 
 article h4

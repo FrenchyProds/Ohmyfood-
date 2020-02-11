@@ -4,6 +4,12 @@
 
 /* ======================================== MEDIA QUERIES ======================================== */
 
+@media (max-width: 1100px) {
+    h3 {
+        font-size: 2.5rem !important;
+    }
+}
+
 
 /* ======================================== Ecrans de moins de 920px ======================================== */
 
@@ -58,6 +64,9 @@
     .menu {
         width: 95% !important;
     }
+    h3 {
+        font-size: 2rem !important;
+    }
     .menu--info_price {
         flex-flow: column wrap !important;
         
@@ -104,6 +113,9 @@
     body {
         margin: 0rem !important;
     }
+    h3 {
+        font-size: 1.5rem !important;
+    }
 }
 
    
@@ -118,7 +130,7 @@
 
 h3 {
     font-weight: normal;
-    font-size: 1.4rem;
+    font-size: 3.5rem;
     background: -webkit-linear-gradient(0deg, rgb(204, 100, 16) 0% 30%, rgb(164, 91, 233), #905BFD);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -259,8 +271,12 @@ article h4
 
 img {
     margin: auto;
-    height: 0.5vw;
+    height: 1vw;
     border-radius: 5px;
+}
+
+.imgFlip {
+    transform: rotate(180deg);
 }
 
 .brush-title
@@ -268,7 +284,7 @@ img {
         grid-area: pr-title;
         img
     {
-        width: 27vw;
+        width: 22vw;
     }
     }
 
@@ -288,8 +304,8 @@ img {
         text-align: center;
         img
     {
-        width: 28vw;
-    }
+        width: 25vw;
+        }
     }
 
 .main-title {
@@ -307,7 +323,7 @@ img {
         grid-area: des-title;
         img
     {
-        width: 30vw;
+        width: 24vw;
     }
     }
 
@@ -319,3 +335,4 @@ img {
         font-weight: bold;
         @extend %mainfont;
 }
+
