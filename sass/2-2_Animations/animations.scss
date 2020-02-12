@@ -150,6 +150,7 @@
     left: 0;
   }
 
+/* French entrée */
 
 .french--underline:after {
     background: none repeat scroll 0 0 transparent;
@@ -159,10 +160,46 @@
     left: 50%;
     transition: width 0.6s ease 0s, left 0.6s ease 0s;
     width: 0;
-    background: linear-gradient(90deg, blue, white, red);
+    background: #C67412;
 }
 
 .french--underline:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+/* French plat */
+
+.french--underlineTwo:after {
+    background: none repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    height: 2.5px;
+    left: 50%;
+    transition: width 0.6s ease 0s, left 0.6s ease 0s;
+    width: 0;
+    background: #A56799;
+}
+
+.french--underlineTwo:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+/* French dessert */
+
+.french--underlineThree:after {
+    background: none repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    height: 2.5px;
+    left: 50%;
+    transition: width 0.6s ease 0s, left 0.6s ease 0s;
+    width: 0;
+    background: #6E4CCC;
+}
+
+.french--underlineThree:hover:after { 
     width: 100%; 
     left: 0; 
   }
