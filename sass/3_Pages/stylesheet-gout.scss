@@ -1,5 +1,6 @@
 @import "../1_Variables/_variables.scss";
 @import '../2_Mixins/_mixins.scss';
+@import 'menu--template';
 @import '../2-2_Animations/animations.scss';
 
 /* ======================================== MEDIA QUERIES ======================================== */
@@ -11,100 +12,15 @@
     }
 }
 
-
-/* ======================================== Ecrans de moins de 920px ======================================== */
-
-
-@media (max-width: 920px) {
-    .menu {
-        width: 80% !important;
-    }
-}
-
-/* ======================================== Ecrans de moins de 800px ======================================== */
-
-@media (max-width: 800px) {
-    .menu {
-        width: 90% !important;
-    }
-}
-
-
 /* ======================================== Ecrans de moins de 750px ======================================== */
 
 
 
 @media (max-width: 750px) {
-    .menu {
-        grid-auto-flow: column !important;
-        padding: 0rem 0.4rem !important;
-        grid-template-columns: 0.5fr 5fr 4fr 4fr 1.5fr 0.5fr !important; 
-        grid-template-areas:
-        '. . . . . .'
-        'h3 h3 h3 h3 h3 h3'
-        '. . . . . .'
-        'pr-title pr-title pr-title pr-title pr-title pr-title'
-        '. prelude prelude prelude prelude .'
-        '. . . . . .'
-        'main-title main-title main-title main-title main-title main-title'
-        '. main main main main .'
-        '. . . . . .'
-        'des-title des-title des-title des-title des-title des-title'
-        '. des des des des .'
-        '. . . . . .'
-        'end-title end-title end-title end-title end-title end-title'
-        '. . . . . .' !important;
-    }
     h3 {
         font-size: 3rem !important;
     }
 }
-
-
-/* ======================================== Ecrans de moins de 580px ======================================== */
-
-
-@media (max-width: 600px) {
-    .menu {
-        width: 95% !important;
-    }
-    .menu--info_price {
-        flex-flow: column wrap !important;
-        
-        p {
-            text-align: center !important;
-            margin-top: 0rem;
-            padding: 0rem 1rem;
-            line-height: 1.2rem;
-        }
-    }
-}
-
-/* ======================================== Ecrans de moins de 475px ======================================== */
-
-
-@media (max-width: 485px) {
-    .menu {
-        width: 98% !important;
-        grid-template-columns: 0.2fr 5fr 4fr 4fr 1.5fr 0.2fr !important;
-        grid-template-areas:
-        '. . . . . .'
-        'h3 h3 h3 h3 h3 h3'
-        '. . . . . .'
-        'pr-title pr-title pr-title pr-title pr-title pr-title'
-        '. prelude prelude prelude prelude .'
-        '. . . . . .'
-        'main-title main-title main-title main-title main-title main-title'
-        '. main main main main .'
-        '. . . . . .'
-        'des-title des-title des-title des-title des-title des-title'
-        '. des des des des .'
-        '. . . . . .'
-        'end-title end-title end-title end-title end-title end-title'
-        '. . . . . .' !important;
-    }
-}
-
 
 
 /* ======================================== Ecrans de moins de 450px ======================================== */
@@ -137,59 +53,7 @@ h3 {
             -webkit-text-fill-color: transparent;
     font-size: 6.5rem;
     margin: 1rem 0rem;
-}
-
-    .menu
-        {
-            display: grid;
-            margin: auto;
-            width: 70%;
-            margin-bottom: 3rem;
-            grid-template-columns: 1fr 3.5fr 4fr 3fr 1fr 1fr;
-            grid-template-rows: auto;
-            row-gap: 5px;
-            grid-template-areas:
-            '. . . . . .'
-            '. h3 h3 h3 h3 .'
-            '. . . . . .'
-            'pr-title pr-title pr-title pr-title pr-title pr-title '
-            '. prelude prelude prelude prelude .'
-            '. . . . . .'
-            'main-title main-title main-title main-title main-title main-title'
-            '. main main main main .'
-            '. . . . . .'
-            'des-title des-title des-title des-title des-title des-title'
-            '. des des des des .'
-            '. . . . . .'
-            '. end-title end-title end-title end-title .'
-            '. . . . . .';
-        }       
-
-
-.legal
-    {
-        margin-left: 1rem;
-    }
-
-
-.contact
-    {
-        margin-right: 1rem;
-    }
-
-a :visited
-    {
-        color: $color-main;
-        text-decoration: none;
-    }
-
-h2 
-    {
-        text-align: center;
-        font-weight: bold;
-        font-size: 1.6rem;
-        grid-area: h2;
-    }
+}     
 
 article
     {
@@ -199,55 +63,21 @@ article
 
 .title
     {
-        grid-area: h3;
-        text-align: center;
         margin: 2rem 0rem;
     }
 
 article h4
     {
-        text-align: center;
-        font-weight: bold;
-        @extend %mainfont;
-    }
-
-.pr-title
-    {
-        text-align: center;
-        @extend %mainfont;
         font-weight: bold;
     }
-
-
-.menu--info_price {
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row nowrap;
-    flex: 1 1 0;
-    line-height: 0.8rem;
-}
-
-.prelude
-    {
-        grid-area: prelude;
-        @extend %mainfont;
-    }    
 
 .prix {
     font-weight: bold;
-    padding-left: 2rem;
 }
 
 .main-title
     {
-        @extend %mainfont;
         font-weight: bold;
-    }
-
-.orgue
-    {
-        grid-area: main;
-        @extend %mainfont;
     }
 
 .des-title
@@ -256,73 +86,40 @@ article h4
         font-weight: bold;
     }
 
-.final
-    {
-        grid-area: des;
-        @extend %mainfont;
-    }
-
 /* ================================= BRUSH STROKES ================================ */
 
 
 img {
-    margin: auto;
     height: 0.8vw;
-    border-radius: 5px;
 }
 
-.brush-title
-    {
-        grid-area: pr-title;
-        img
-    {
+.brush-title {
+    img {
         width: 27vw;
     }
-    }
-
-.pr-title {
-        display: flex;
-        flex-grow: 1;
-        grid-area: pr-title;
-        align-content: center;
-        font-weight: bold;
-        @extend %mainfont;
 }
 
+.pr-title {
+        font-weight: bold;
+}
 
-.brush-title--2
-    {
-        grid-area: main-title;
-        img
-    {
+.brush-title--2    {
+        img    {
         width: 28vw;
     }
     }
 
 .main-title {
-        display: flex;
-        flex-grow: 1;
-        grid-area: pr-title;
-        align-content: center;
         font-weight: bold;
-        @extend %mainfont;
 }
 
 
-.brush-title--3
-    {
-        grid-area: des-title;
-        img
-    {
+.brush-title--3    {
+        img    {
         width: 28vw;
     }
     }
 
 .des-title {
-        display: flex;
-        flex-grow: 1;
-        grid-area: pr-title;
-        align-content: center;
         font-weight: bold;
-        @extend %mainfont;
 }

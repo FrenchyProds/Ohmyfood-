@@ -1,5 +1,280 @@
-/* ===================================== ANIMATION WIGGLE NAV =============================== */
+/* ======================================== Ecrans de moins de 935px ======================================== */
 @import url("https://fonts.googleapis.com/css?family=Courgette|Croissant+One&display=swap");
+@media (max-width: 935px) {
+  .menu {
+    width: 80% !important;
+  }
+}
+/* ======================================== Ecrans de moins de 800px ======================================== */
+@media (max-width: 800px) {
+  .menu {
+    width: 90% !important;
+  }
+}
+/* ======================================== Ecrans de moins de 750px ======================================== */
+@media (max-width: 750px) {
+  .menu {
+    grid-auto-flow: column !important;
+    padding: 0rem 0.4rem !important;
+    grid-template-columns: 0.5fr 5fr 4fr 4fr 1.5fr 0.5fr !important;
+    grid-template-areas: ". . . . . ." "h3 h3 h3 h3 h3 h3" ". . . . . ." "pr-title pr-title pr-title pr-title pr-title pr-title" ". prelude prelude prelude prelude ." ". . . . . ." "main-title main-title main-title main-title main-title main-title" ". main main main main ." ". . . . . ." "des-title des-title des-title des-title des-title des-title" ". des des des des ." ". . . . . ." "end-title end-title end-title end-title end-title end-title" ". . . . . ." !important;
+  }
+}
+/* ======================================== Ecrans de moins de 600px ======================================== */
+@media (max-width: 600px) {
+  .menu--info_price {
+    flex-flow: column wrap !important;
+  }
+  .menu--info_price p {
+    text-align: center !important;
+    margin-top: 0rem;
+    padding: 0rem 1rem;
+    line-height: 1.2rem;
+  }
+}
+/* ======================================== Ecrans de moins de 485px ======================================== */
+@media (max-width: 485px) {
+  .menu {
+    grid-template-areas: ". . . . . ." "h3 h3 h3 h3 h3 h3" ". . . . . ." "pr-title pr-title pr-title pr-title pr-title pr-title" ". prelude prelude prelude prelude ." ". . . . . ." "main-title main-title main-title main-title main-title main-title" ". main main main main ." ". . . . . ." "des-title des-title des-title des-title des-title des-title" ". des des des des ." ". . . . . ." "end-title end-title end-title end-title end-title end-title" ". . . . . ." !important;
+  }
+}
+/* ====================================================================================================================== */
+.menu {
+  display: grid;
+  margin: auto;
+  width: 70%;
+  margin-bottom: 3rem;
+  grid-template-columns: 1fr 3.5fr 4fr 3fr 1fr 1fr;
+  grid-template-rows: auto;
+  row-gap: 5px;
+  grid-template-areas: ". . . . . ." ". h3 h3 h3 h3 ." ". . . . . ." "pr-title pr-title pr-title pr-title pr-title pr-title " ". prelude prelude prelude prelude ." ". . . . . ." "main-title main-title main-title main-title main-title main-title" ". main main main main ." ". . . . . ." "des-title des-title des-title des-title des-title des-title" ". des des des des ." ". . . . . ." ". end-title end-title end-title end-title ." ". . . . . .";
+}
+
+.legal {
+  margin-left: 1rem;
+}
+
+.contact {
+  margin-right: 1rem;
+}
+
+a :visited {
+  color: #FDCB46;
+  text-decoration: none;
+}
+
+.menu--info_price {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  flex: 1 1 0;
+  line-height: 1.2rem;
+}
+
+.prelude {
+  -ms-grid-row: 9;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-area: prelude;
+}
+
+.prix {
+  padding-left: 2rem;
+}
+
+.title {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-area: h3;
+  text-align: center;
+}
+
+article h4 {
+  text-align: center;
+}
+
+.pr-title {
+  text-align: center;
+}
+
+.orgue {
+  -ms-grid-row: 15;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-area: main;
+}
+
+.final {
+  -ms-grid-row: 21;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-area: des;
+}
+
+/* ================================= BRUSH STROKES ================================ */
+img {
+  margin: auto;
+}
+
+.brush-title {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: pr-title;
+}
+
+.pr-title {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  display: flex;
+  flex-grow: 1;
+  grid-area: pr-title;
+  align-content: center;
+}
+
+.brush-title--2 {
+  -ms-grid-row: 13;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: main-title;
+}
+
+.main-title {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  display: flex;
+  flex-grow: 1;
+  grid-area: pr-title;
+  align-content: center;
+}
+
+.brush-title--3 {
+  -ms-grid-row: 19;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: des-title;
+}
+
+.des-title {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  display: flex;
+  flex-grow: 1;
+  grid-area: pr-title;
+  align-content: center;
+}
+
+@media (max-width: 750px){
+  .prelude {
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 4;
+  }
+  .title {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .orgue {
+    -ms-grid-row: 8;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 4;
+  }
+  .final {
+    -ms-grid-row: 11;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 4;
+  }
+  .brush-title {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .pr-title {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .brush-title--2 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .main-title {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .brush-title--3 {
+    -ms-grid-row: 10;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .des-title {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+}
+
+@media (max-width: 485px){
+  .prelude {
+    -ms-grid-row: 5;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 4;
+  }
+  .title {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .orgue {
+    -ms-grid-row: 8;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 4;
+  }
+  .final {
+    -ms-grid-row: 11;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 4;
+  }
+  .brush-title {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .pr-title {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .brush-title--2 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .main-title {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .brush-title--3 {
+    -ms-grid-row: 10;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+  .des-title {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+  }
+}
+
+/* ===================================== ANIMATION WIGGLE NAV =============================== */
 .legal:hover {
   animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
   transform: translate3d(0, 0, 0);
@@ -101,6 +376,15 @@
   transition: transform 0.4s ease-in-out 0s;
 }
 
+@media (min-width: 1000px) and (max-width: 1150px) {
+  .french .zoom-wrapper:hover {
+    transform: scale(1.2) !important;
+    -ms-transform: scale(1.2) !important;
+    -moz-transform: scale(1.2) !important;
+    -webkit-transform: scale(1.2) !important;
+    -o-transform: scale(1.2) !important;
+  }
+}
 @media (min-width: 1000px) {
   .zoom-wrapper:hover {
     transition-duration: 0.5s;
@@ -109,51 +393,7 @@
     -moz-transform: scale(1.4) !important;
     -webkit-transform: scale(1.4) !important;
     -o-transform: scale(1.4) !important;
-  }
-  .zoom-wrapper:hover p:hover {
-    opacity: 0.5;
-  }
-  .zoom-wrapper:hover h3:hover {
-    opacity: 0.5;
-  }
-  .zoom-wrapper:hover i:hover {
-    opacity: 0.5;
-  }
-}
-@media (min-width: 820px) {
-  .zoom-wrapper:hover {
-    transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -o-transform: scale(1.2);
-  }
-
-  .gout .zoom-wrapper:hover {
-    transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    overflow: hidden;
-  }
-
-  .french .zoom-wrapper:hover {
-    transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    overflow: hidden;
-  }
-}
-@media (min-width: 375px) and (max-width: 600px) {
-  .zoom-wrapper:hover {
-    transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -o-transform: scale(1.2);
+    opacity: 0.5 !important;
   }
 }
 /* ================================== ANIMATION SOULIGNEMENT =================================== */
@@ -171,7 +411,6 @@
 .enchanted--underline:hover:after {
   width: 100%;
   left: 0;
-  opacity: 50%;
 }
 
 .french--underline:after {
@@ -244,53 +483,10 @@
     font-size: 2.5rem !important;
   }
 }
-/* ======================================== Ecrans de moins de 920px ======================================== */
-@media (max-width: 920px) {
-  .menu {
-    width: 80% !important;
-  }
-}
-/* ======================================== Ecrans de moins de 800px ======================================== */
-@media (max-width: 800px) {
-  .menu {
-    width: 90% !important;
-  }
-}
-/* ======================================== Ecrans de moins de 750px ======================================== */
-@media (max-width: 750px) {
-  .menu {
-    grid-auto-flow: column !important;
-    padding: 0rem 0.4rem !important;
-    grid-template-columns: 0.5fr 5fr 4fr 4fr 1.5fr 0.5fr !important;
-    grid-template-areas: ". . . . . ." "h3 h3 h3 h3 h3 h3" ". . . . . ." "pr-title pr-title pr-title pr-title pr-title pr-title" ". prelude prelude prelude prelude ." ". . . . . ." "main-title main-title main-title main-title main-title main-title" ". main main main main ." ". . . . . ." "des-title des-title des-title des-title des-title des-title" ". des des des des ." ". . . . . ." "end-title end-title end-title end-title end-title end-title" ". . . . . ." !important;
-  }
-}
-/* ======================================== Ecrans de moins de 580px ======================================== */
+/* ======================================== Ecrans de moins de 600px ======================================== */
 @media (max-width: 600px) {
-  .menu {
-    width: 95% !important;
-  }
-
   h3 {
     font-size: 2rem !important;
-  }
-
-  .menu--info_price {
-    flex-flow: column wrap !important;
-  }
-  .menu--info_price p {
-    text-align: center !important;
-    margin-top: 0rem;
-    padding: 0rem 1rem;
-    line-height: 1.2rem;
-  }
-}
-/* ======================================== Ecrans de moins de 475px ======================================== */
-@media (max-width: 485px) {
-  .menu {
-    width: 98% !important;
-    grid-template-columns: 0.2fr 5fr 4fr 4fr 1.5fr 0.2fr !important;
-    grid-template-areas: ". . . . . ." "h3 h3 h3 h3 h3 h3" ". . . . . ." "pr-title pr-title pr-title pr-title pr-title pr-title" ". prelude prelude prelude prelude ." ". . . . . ." "main-title main-title main-title main-title main-title main-title" ". main main main main ." ". . . . . ." "des-title des-title des-title des-title des-title des-title" ". des des des des ." ". . . . . ." "end-title end-title end-title end-title end-title end-title" ". . . . . ." !important;
   }
 }
 /* ======================================== Ecrans de moins de 450px ======================================== */
@@ -304,7 +500,7 @@
   }
 }
 /* ======================================== FIN DES MEDIA QUERIES ======================================== */
-.final, .des-title, .orgue, .main-title, .prelude, .pr-title, article h4 {
+.prelude, article h4, .pr-title, .main-title, .orgue, .final, .des-title {
   font-family: "Courgette", lighter;
 }
 
@@ -314,37 +510,6 @@ h3 {
   background: -webkit-linear-gradient(0deg, #cc6410 0% 30%, #a45be9, #905BFD);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.menu {
-  display: grid;
-  margin: auto;
-  width: 70%;
-  margin-bottom: 3rem;
-  grid-template-columns: 1fr 3.5fr 4fr 3fr 1fr 1fr;
-  grid-template-rows: auto;
-  row-gap: 5px;
-  grid-template-areas: ". . . . . ." ". h3 h3 h3 h3 ." ". . . . . ." "pr-title pr-title pr-title pr-title pr-title pr-title " ". prelude prelude prelude prelude ." ". . . . . ." "main-title main-title main-title main-title main-title main-title" ". main main main main ." ". . . . . ." "des-title des-title des-title des-title des-title des-title" ". des des des des ." ". . . . . ." ". end-title end-title end-title end-title ." ". . . . . .";
-}
-
-.legal {
-  margin-left: 1rem;
-}
-
-.contact {
-  margin-right: 1rem;
-}
-
-a :visited {
-  color: #FDCB46;
-  text-decoration: none;
-}
-
-h2 {
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.6rem;
-  grid-area: h2;
 }
 
 article {
@@ -357,39 +522,15 @@ article {
 }
 
 .title {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 4;
-  grid-area: h3;
-  text-align: center;
   font-family: "Croissant One", cursive;
 }
 
-.pr-title {
-  text-align: center;
-  font-weight: bold;
-  color: #C67412;
-}
-
-.menu--info_price {
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap;
-  flex: 1 1 0;
-  line-height: 0.8rem;
-}
-
 .prelude {
-  -ms-grid-row: 9;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 4;
   color: #C67412;
-  grid-area: prelude;
 }
 
 .prix {
   font-weight: bold;
-  padding-left: 2rem;
 }
 
 .main-title {
@@ -398,10 +539,6 @@ article {
 }
 
 .orgue {
-  -ms-grid-row: 15;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 4;
-  grid-area: main;
   color: #A56799;
 }
 
@@ -412,190 +549,39 @@ article {
 }
 
 .final {
-  -ms-grid-row: 21;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 4;
-  grid-area: des;
   color: #6E4CCC;
 }
 
 /* ================================= BRUSH STROKES ================================ */
 img {
-  margin: auto;
   height: 1vw;
-  border-radius: 5px;
+}
+
+.brush-title img {
+  width: 22vw;
 }
 
 .imgFlip {
   transform: rotate(180deg);
 }
 
-.brush-title {
-  -ms-grid-row: 7;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  grid-area: pr-title;
-}
-.brush-title img {
-  width: 22vw;
-}
-
 .pr-title {
-  -ms-grid-row: 7;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  display: flex;
-  flex-grow: 1;
-  grid-area: pr-title;
-  align-content: center;
   font-weight: bold;
+  color: #C67412;
 }
 
-.brush-title--2 {
-  -ms-grid-row: 13;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  grid-area: main-title;
-  text-align: center;
-}
 .brush-title--2 img {
   width: 25vw;
 }
 
 .main-title {
-  -ms-grid-row: 7;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  display: flex;
-  flex-grow: 1;
-  grid-area: pr-title;
-  align-content: center;
   font-weight: bold;
 }
 
-.brush-title--3 {
-  -ms-grid-row: 19;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  grid-area: des-title;
-}
 .brush-title--3 img {
   width: 24vw;
 }
 
 .des-title {
-  -ms-grid-row: 7;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 6;
-  display: flex;
-  flex-grow: 1;
-  grid-area: pr-title;
-  align-content: center;
   font-weight: bold;
-}
-
-@media (max-width: 750px){
-  .title {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-  }
-  .prelude {
-    -ms-grid-row: 5;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 4;
-  }
-  .orgue {
-    -ms-grid-row: 8;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 4;
-  }
-  .final {
-    -ms-grid-row: 11;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 4;
-  }
-  .brush-title {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-  }
-  .pr-title {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-  }
-  .brush-title--2 {
-    -ms-grid-row: 7;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-  }
-  .main-title {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-  }
-  .brush-title--3 {
-    -ms-grid-row: 10;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-  }
-  .des-title {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-  }
-}
-
-@media (max-width: 485px){
-  .title {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-  }
-  .prelude {
-    -ms-grid-row: 5;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 4;
-  }
-  .orgue {
-    -ms-grid-row: 8;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 4;
-  }
-  .final {
-    -ms-grid-row: 11;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 4;
-  }
-  .brush-title {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-  }
-  .pr-title {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-  }
-  .brush-title--2 {
-    -ms-grid-row: 7;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-  }
-  .main-title {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-  }
-  .brush-title--3 {
-    -ms-grid-row: 10;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-  }
-  .des-title {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 6;
-  }
 }

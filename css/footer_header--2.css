@@ -101,6 +101,15 @@
   transition: transform 0.4s ease-in-out 0s;
 }
 
+@media (min-width: 1000px) and (max-width: 1150px) {
+  .french .zoom-wrapper:hover {
+    transform: scale(1.2) !important;
+    -ms-transform: scale(1.2) !important;
+    -moz-transform: scale(1.2) !important;
+    -webkit-transform: scale(1.2) !important;
+    -o-transform: scale(1.2) !important;
+  }
+}
 @media (min-width: 1000px) {
   .zoom-wrapper:hover {
     transition-duration: 0.5s;
@@ -109,51 +118,7 @@
     -moz-transform: scale(1.4) !important;
     -webkit-transform: scale(1.4) !important;
     -o-transform: scale(1.4) !important;
-  }
-  .zoom-wrapper:hover p:hover {
-    opacity: 0.5;
-  }
-  .zoom-wrapper:hover h3:hover {
-    opacity: 0.5;
-  }
-  .zoom-wrapper:hover i:hover {
-    opacity: 0.5;
-  }
-}
-@media (min-width: 820px) {
-  .zoom-wrapper:hover {
-    transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -o-transform: scale(1.2);
-  }
-
-  .gout .zoom-wrapper:hover {
-    transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    overflow: hidden;
-  }
-
-  .french .zoom-wrapper:hover {
-    transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    overflow: hidden;
-  }
-}
-@media (min-width: 375px) and (max-width: 600px) {
-  .zoom-wrapper:hover {
-    transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -o-transform: scale(1.2);
+    opacity: 0.5 !important;
   }
 }
 /* ================================== ANIMATION SOULIGNEMENT =================================== */
@@ -171,7 +136,6 @@
 .enchanted--underline:hover:after {
   width: 100%;
   left: 0;
-  opacity: 50%;
 }
 
 .french--underline:after {
